@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITTY MakeUp & Skincare</title>
+
+    <link rel="stylesheet" href="css/stylesH.css">
+</head>
+<body>
+
+    <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="image/logo.png" alt="KITTY MakeUp"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">À Propos</a></li>
+                    <li><a href="#">Formation</a></li>
+                    <li><a href="#">RDV</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Autres Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kitty MakeUp &Skincaire</a></li>
+                            <li><a href="#">Kitty Content</a></li>
+                            <li><a href="#">Residence Heaven</a></li>
+                            <li><a href="#">Boutique</a></li>
+                        </ul>
+                    </li>
+            
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Connexion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Slider d'images -->
+<section class="slider">
+    <div class="slides">
+        <img src="image/m1.jpeg" alt="Image 1" class="slide active">
+        <img src="image/m2.jpeg" alt="Image 2" class="slide">
+        <img src="image/m3.jpeg" alt="Image 3" class="slide">
+        <img src="image/m1.jpeg" alt="Image 1" class="slide active">
+        <img src="image/m2.jpeg" alt="Image 2" class="slide">
+        <img src="image/m3.jpeg" alt="Image 3" class="slide">
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+
+    <!-- Image de présentation principale -->
+    <section class="hero">
+        <img src="image/m1." alt="Image de présentation" class="hero-image">
+    </section>
+
+    <!-- Section principale -->
+    <section class="main-content">
+        <h1>KITTY MakeUp & Skincare</h1>
+        <p>Maquillage professionnel et soins de la peau pour révéler votre beauté naturelle.</p>
+        <button>En savoir plus</button>
+    </section>
+
+
+    </section>
+    <header>
+        <!-- Sous-sections -->
+    <section class="services">
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Service MakeUp">
+            <div class="service-text">
+                <h2>KITTY MakeUp</h2>
+                <p>Découvrez notre service de maquillage professionnel pour sublimer votre beauté.</p>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-text">
+                <h2>Skincare</h2>
+                <p>Profitez de nos soins pour la peau, pour une routine beauté qui correspond à vos besoins.</p>
+                <button>En savoir plus</button>
+                <p>
+                
+                    
+                </p>
+            </div>
+            <p>
+
+            </p>
+            <img src="image/s1.png" alt="Service Skincare">
+        </div>
+    </header>
+    <!-- Section Formation -->
+    <section class="formation">
+        <div class="formation-content">
+            <img src="https://via.placeholder.com/300" alt="Formation Maquillage">
+            <div class="formation-text">
+                <h2>Formation MAKE UP</h2>
+                <p>Rejoignez notre programme de formation pour apprendre les meilleures techniques de maquillage.</p>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>KITTY MAKEUP</h3>
+                <p>Adresse : 123 Rue de la Beauté, Abidjan</p>
+                <p>Téléphone : +225 01 23 45 67</p>
+                <p>Email : kittymakeup@gmail.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>NOUS CONTACTER</h3>
+                <p>Suivez-nous sur les réseaux sociaux :</p>
+                <ul class="social-icons">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2024 KITTY MAKEUP</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+
+            const slidesContainer = document.querySelector('.slides');
+            slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+    </script>
+
+</body>
+</html>

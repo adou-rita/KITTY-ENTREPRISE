@@ -1,0 +1,216 @@
+
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #8a8d89;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Ajustez la taille du logo ici */
+    height: auto; /* Conserve l'aspect ratio */
+}
+
+
+nav {
+    height: 20px; /* Hauteur fixe pour la barre de navigation */
+    display: flex; /* Utiliser flexbox */
+    align-items: center; /* Centre les éléments de navigation verticalement */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+   
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f2eaea;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dropdown-menu {
+    display: none; /* Cacher le sous-menu par défaut */
+    position: absolute; /* Positionner le sous-menu */
+    background-color: #ffffff; /* Couleur de fond du sous-menu */
+    padding: 10px 0; /* Espacement intérieur */
+    margin: 0; /* Annuler les marges par défaut */
+    z-index: 1000; /* S'assurer que le sous-menu est au-dessus des autres éléments */
+}
+
+.dropdown-menu li {
+    margin: 0; /* Pas de marges pour les éléments du sous-menu */
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block; /* Afficher le sous-menu au survol */
+}
+
+.dropdown-menu a {
+    display: block; /* Chaque élément du sous-menu prend toute la largeur */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    padding: 10px 20px; /* Espacement autour du texte */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f3aedf; /* Changer la couleur de fond au survol */
+}
+.slider {
+    position: relative;
+    max-width: 50%; /* Vous pouvez définir une largeur maximale si nécessaire */
+    margin: 20px auto; /* Centrer le slider */
+    overflow: hidden; /* Cacher le débordement */
+}
+
+.slides {
+    display: flex; /* Affiche les images en ligne */
+    transition: transform 0.5s ease-in-out; /* Animation lors du changement d'image */
+}
+
+.slide {
+    min-width: 100%; /* Chaque image prend toute la largeur du slider */
+    height: auto; /* Garder les proportions */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Changer la couleur au survol */
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+}
+
+.main-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.service img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.formation {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.formation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formation img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
+}
+
+footer p {
+    margin-top: 20px;
+}
