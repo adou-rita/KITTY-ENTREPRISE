@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KITTY MakeUp & Skincare</title>
+    <title>KITTY MakeUp & Skincare/ APROPOS</title>
 
     <link rel="stylesheet" href="css/stylesH.css">
 </head>
@@ -35,20 +35,36 @@
                 </ul>
             </nav>
         </header>
-        <!-- Slider d'images -->
-<section class="slider">
-    <div class="slides">
-        <img src="image/m1.jpeg" alt="Image 1" class="slide active">
-        <img src="image/m2.jpeg" alt="Image 2" class="slide">
-        <img src="image/m3.jpeg" alt="Image 3" class="slide">
-        <img src="image/m1.jpeg" alt="Image 1" class="slide active">
-        <img src="image/m2.jpeg" alt="Image 2" class="slide">
-        <img src="image/m3.jpeg" alt="Image 3" class="slide">
+        <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+        
+<!-- Carousel -->
+<div id="kittyCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/m1.jpeg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="image/m2.jpeg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="image3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
     </div>
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
-</section>
-
+    <!-- Boutons précédent et suivant -->
+    <a class="carousel-control-prev" href="#kittyCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#kittyCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 
     <!-- Image de présentation principale -->
     <section class="hero">

@@ -11,31 +11,34 @@ body {
     line-height: 1.6;
     background-color: #8a8d89;
 }
-
 header {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.logo img {
-    max-height: 50px; /* Ajustez la taille du logo ici */
-    height: auto; /* Conserve l'aspect ratio */
+.logo {
+    flex-grow: 1; /* Occupe tout l'espace disponible à gauche */
 }
 
+.logo img {
+    max-height: 50px;
+    height: auto;
+}
 
 nav {
-    height: 20px; /* Hauteur fixe pour la barre de navigation */
-    display: flex; /* Utiliser flexbox */
-    align-items: center; /* Centre les éléments de navigation verticalement */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -43,7 +46,6 @@ nav ul li {
 }
 
 nav ul li a {
-   
     text-decoration: none;
     padding: 10px 20px;
     margin-top: 10px;
@@ -81,45 +83,10 @@ nav ul li:hover .dropdown-menu {
 .dropdown-menu a:hover {
     background-color: #f3aedf; /* Changer la couleur de fond au survol */
 }
-.slider {
-    position: relative;
-    max-width: 50%; /* Vous pouvez définir une largeur maximale si nécessaire */
-    margin: 20px auto; /* Centrer le slider */
-    overflow: hidden; /* Cacher le débordement */
-}
-
-.slides {
-    display: flex; /* Affiche les images en ligne */
-    transition: transform 0.5s ease-in-out; /* Animation lors du changement d'image */
-}
-
-.slide {
-    min-width: 100%; /* Chaque image prend toute la largeur du slider */
-    height: auto; /* Garder les proportions */
-}
-
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Changer la couleur au survol */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover; /* Garde la proportion tout en couvrant la zone */
+    width: 100%;
 }
 
 
