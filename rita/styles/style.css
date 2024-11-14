@@ -1,0 +1,229 @@
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7d8d8;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 100px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*carosel*/
+.custom-carousel {
+    width: 50%; /* Ajuste la largeur, par exemple 80% de la taille de l'écran */
+    height: 100px; /* Ajuste la hauteur selon ton besoin, ici 400px */
+    margin: 0 auto; /* Centrer le carrousel horizontalement */
+}
+
+.custom-carousel .carousel-inner .carousel-item img {
+    width: 100%; /* Adapter l'image à la largeur du carrousel */
+    height: 50%; /* Adapter l'image à la hauteur du carrousel */
+    object-fit: cover; /* Pour un recadrage équilibré */
+}
+
+/*banner*/
+/* Bande de couleur rose */
+.banner {
+    background-color: #f8e2ed; /* Rose vif */
+    padding: 50px; /* Ajustez la hauteur */
+    text-align: center;
+    border-radius: 10px; /* Ajustez le rayon pour changer la forme */
+    margin: 20px auto; /* Centre la bande */
+    width: 100%; /* Ajustez la largeur de la bande */
+    transition: all 0.3s ease; /* Transition pour agrandissement */
+}
+
+/* Texte au-dessus de la bande */
+.banner-text {
+    color: #000000; /* Couleur du texte en blanc */
+    font-size: 1.5rem; /* Taille de police du texte */
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Agrandir la bande au survol */
+.banner:hover {
+    width: 90%; /* Augmente la largeur de la bande au survol */
+    padding: 30px; /* Augmente la hauteur de la bande au survol */
+    border-radius: 15px; /* Change la forme au survol */
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    gap: 40px; /* Ajoute de l'espace entre l'image et le texte */
+    padding: 10px; /* Optionnel : ajoute un peu de padding global */
+}
+
+/* Conteneur de l'image */
+.image-container {
+    flex: 3; /* Prend 50% de l'espace */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Conteneur de texte */
+.text-container {
+    flex: 1; /* Prend 50% de l'espace */
+    padding: 20px; /* Ajuste l'espacement interne */
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style réactif pour mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px; /* Moins d'espace entre l'image et le texte sur mobile */
+    }
+
+    .image-container,
+    .text-container {
+        flex: none;
+        width: 100%;
+    }
+}/* Conteneur principal */
+.cadre {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    justify-content: space-between; /* Espace entre le texte et les images */
+    padding: 20px;
+    border: 2px solid #000; /* Bordure autour du cadre */
+  }
+  
+  /* Style du texte */
+  .texte {
+    flex: 1; /* Le texte prend l'espace disponible */
+    padding-right: 20px; /* Espacement entre le texte et les images */
+    font-size: 18px; /* Taille du texte */
+  }
+  
+  /* Conteneur des images */
+  .images {
+    display: flex;
+    gap: 20px; /* Espace entre les images */
+  }
+  
+  /* Cadre de l'image */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintient la couverture de l'image */
+  }
+  
+  /* Forme ronde */
+  .cercle {
+    border-radius: 50%; /* Bordure circulaire */
+  }
+
+  
+  /* Forme en cœur */
+  .coeur {
+    position: relative;
+    clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%); /* Crée un cœur */
+  }
+  
+  .coeur img {
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%); /* Couper l'image en forme de cœur */
+  }
+  
