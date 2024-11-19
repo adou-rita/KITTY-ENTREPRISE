@@ -1,0 +1,446 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #555;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images_shop/bg-b.png'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.background-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+
+/* Filtres */
+.filters {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.filters h2 {
+    margin-bottom: 10px;
+}
+.filter-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter-options select, .filter-options input, .apply-filters {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.apply-filters {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+.apply-filters:hover {
+    background-color: #555;
+}
+
+/* Liste des produits */
+.product-list {
+    padding: 20px;
+}
+.product-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Galerie des produits */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item .price {
+    color: #f1c40f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-item .description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 15px;
+}
+
+/* Boutons */
+.product-item .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn {
+    background-color: #555;
+}
+
+.order-btn:hover {
+    background-color: #555;
+}
+
+.details-btn {
+    background-color: #ddd;
+}
+
+.details-btn:hover {
+    background-color: #ddd;
+}
+a {
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.btn {
+    text-decoration: none; /* Supprime le soulignement */
+    display: inline-block; /* Rend le lien semblable à un bouton */
+    padding: 10px 20px; /* Espace interne pour le bouton */
+    color: #fff; /* Couleur du texte */
+    background-color: #555; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Effet survol */
+}
+
+.btn:hover {
+    background-color: #ddd; /* Couleur au survol */
+}
+
+/* Section Meilleures Ventes */
+.best-sellers {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    height: 5%;
+}
+
+.best-sellers h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 500px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.carousel-item .price {
+    font-size: 18px;
+    color: #f1c40f;
+}
+
+.carousel-item .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-btn:hover {
+    background-color: #555;
+}
+
+.prev-btn {
+    left: 5px;
+}
+
+.next-btn {
+    right: 5px;
+}
+
+
+
+/* Footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Sections du footer */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}

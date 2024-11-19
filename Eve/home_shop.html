@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Petits Trucs Utiles</title>
+    <link rel="stylesheet" href="./css/styles_shop.css">
+</head>
+<body>
+
+    <!-- Barre de menu avec logo et menu déroulant -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images_shop/logo1.PNG" alt="Logo" />
+               <!-- <span>Mes Petits Trucs Utiles</span> -->
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="menu">
+                <li><a href="home_shop">Accueil</a></li>
+                
+                <li><a href="apropos_shop.html">À propos</a></li>
+
+                
+                <li><a href="boutique_shop.html">Boutique</a></li>
+                
+                <!-- Menu déroulant pour service-->
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Autres Services</a>
+                    <div class="dropdown-content">
+                        <a href="#kitty-makeup">Kitty MakeUp</a>
+                        <a href="#kitty-content">Kitty Content</a>
+                        <a href="#residence-heaven">Residence Heaven</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Section avec une image en arrière-plan -->
+     <section class="background-section">
+        <div class="content">
+            <h1>Bienvenue sur Mes Petits Trucs Utiles</h1>
+            <p>Découvrez notre collection unique d'articles utiles pour la vie quotidienne.</p>
+            <a href="boutique_shop.html" class="btn">Voir la Boutique</a>
+        </div>
+    </section>
+
+    <!-- Section de galerie de produits -->
+<section class="product-gallery">
+    <h2>Nos Produits</h2>
+    <div class="gallery">
+        <div class="product-card">
+            <img src="./images_shop/AC2.png" alt="Produit 1">
+            <h3>Ancensoire</h3>
+            <p>Description du produit 1.</p>
+            <a href="#buy1" class="btn">Acheter</a>
+        </div>
+        <div class="product-card">
+            <img src="./images_shop/G1.png" alt="Produit 2">
+            <h3>Gourde Motivatrice</h3>
+            <p>Description du produit 2.</p>
+            <a href="#buy2" class="btn">Acheter</a>
+        </div>
+        <div class="product-card">
+            <img src="./images_shop/sac4.png" alt="Produit 3">
+            <h3>Sac Banane</h3>
+            <p>Description du produit 3.</p>
+            <a href="#buy3" class="btn">Acheter</a>
+        </div>
+        <div class="gallery">
+            <div class="product-card">
+                <img src="./images_shop/AC10.png" alt="Produit 1">
+                <h3>Charbon d'ancens</h3>
+                <p>Description du produit 1.</p>
+                <a href="#buy1" class="btn">Acheter</a>
+            </div>
+            <div class="product-card">
+                <img src="./images_shop/G3.png" alt="Produit 2">
+                <h3>Gourde </h3>
+                <p>Description du produit 2.</p>
+                <a href="#buy2" class="btn">Acheter</a>
+            </div>
+            <div class="product-card">
+                <img src="./images_shop/sac7.png" alt="Produit 3">
+                <h3>Sac</h3>
+                <p>Description du produit 3.</p>
+                <a href="#buy3" class="btn">Acheter</a>
+            </div>
+        <!-- Ajoute d'autres cartes de produits selon les besoins -->
+    </div>
+</section>
+
+<!-- Section À propos -->
+<section class="about-section">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>À propos de Nous</h2>
+            <p>Bienvenue sur Mes Petits Trucs Utiles ! Nous offrons une collection unique d'articles qui facilitent la vie quotidienne. 
+               Notre mission est de fournir des solutions pratiques et de qualité qui répondent aux besoins de nos clients.</p>
+            <p>Nous sommes passionnés par la création de produits utiles et innovants. Notre équipe travaille chaque jour pour trouver des 
+               idées nouvelles afin de vous simplifier la vie. Rejoignez-nous dans cette aventure et découvrez nos produits de qualité !</p>
+        </div>
+        <div class="about-image">
+            <img src="./images_shop/gourde1.jpg" alt="À propos de nous">
+        </div>
+    </div>
+</section>
+
+<!-- Section Carrousel de Catégories avec des images en arrière-plan -->
+<section class="category-carousel">
+    <h2>Nos Catégories</h2>
+    <div class="carousel-container">
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        <div class="carousel">
+            <!-- Item 1 -->
+            <div class="carousel-item" style="background-image: url('images_shop/AC9.png');">
+                <div class="overlay">
+                    <div class="content">
+                        <h3>Encensoirs Design</h3>
+                        <p>Parfumez votre intérieur tout en ajoutant une touche de décoration unique.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="carousel-item" style="background-image: url('images_shop/gourdess.jpg');">
+                <div class="overlay">
+                    <div class="content">
+                        <h3>Gourdes Motivatrices</h3>
+                        <p>Les gourdes motivatrices sont là pour vous accompagner tout au long de la journée.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="carousel-item" style="background-image: url('images_shop/vetements1.jpg');">
+                <div class="overlay">
+                    <div class="content">
+                        <h3>Vêtements & Accessoires</h3>
+                        <p>L’accessoire de mode intemporel qu’il faut à votre garde-robe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Mes Petits Trucs Utiles</h3>
+            <p>Mes petits trucs utiles est une Boutique de vente en ligne de gadgets et d’accessoires pour faciliter le quotidien.</p>
+            <img src="images_shop/logo1.PNG" alt="Logo" class="footer-logo-img">
+        </div>
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images_shop/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images_shop/icon-fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr"><img src="images_shop/icon-insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const nextBtn = document.querySelector('.next-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            // Taille d'un item
+            const itemWidth = items[0].offsetWidth;
+            // Déplacer le carrousel
+            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        // Assurer que le carrousel s'affiche correctement au chargement
+        window.addEventListener('resize', updateCarousel);
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

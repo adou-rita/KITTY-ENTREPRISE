@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande - Mes Petits Trucs Utiles</title>
+    <link rel="stylesheet" href="./css/com_shop.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="site-header">
+        <h1>Mes Petits Trucs Utiles</h1>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <h2>Passer une Commande</h2>
+        <section class="product-details">
+            
+            
+            <div class="details-container">
+                <!-- Image du produit -->
+                <div class="product-image">
+                    <img src="./images_shop/AC5.png" alt="Produit sélectionné">
+                </div>
+
+                <!-- Formulaire -->
+                <div class="product-info">
+                    <h2>Formulaire de Commande</h2>
+                    <form action="confirmation.html" method="POST">
+                        <!-- Informations personnelles -->
+                        <div class="form-group">
+                            <label for="name">Nom et Prénom :</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone :</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+
+                        <!-- Adresse -->
+                        <div class="form-group">
+                            <label for="address">Adresse :</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Votre adresse complète" required></textarea>
+                        </div>
+
+                        <!-- Produit commandé -->
+                        <div class="form-group">
+                            <label for="product">Produit Commandé :</label>
+                            <select id="product" name="product" required>
+                                <option value="">Sélectionnez un produit</option>
+                                <option value="encensoir">Encensoir Élite</option>
+                                <option value="gourde">Gourde Motivatrice</option>
+                                <option value="sac-banane">Sac Banane Chic</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantité :</label>
+                            <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required>
+                        </div>
+
+                        <!-- Résumé -->
+                        <div class="order-summary">
+                            <h3>Résumé de la Commande</h3>
+                            <p>Vérifiez vos informations avant de soumettre votre commande.</p>
+                        </div>
+
+                        <!-- Bouton de soumission -->
+                        <div class="form-group">
+                            <button type="submit" class="btn submit-btn">Confirmer la Commande</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

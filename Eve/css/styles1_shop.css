@@ -1,0 +1,488 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #555;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images_shop/bg1.jpg'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.background-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* Section À propos */
+.about-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Pour rendre la section réactive sur les petits écrans */
+}
+
+.about-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.about-section .btn:hover {
+    background-color: #777;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+/* Section Introduction */
+.about-intro {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-intro h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Histoire */
+.about-history,
+.about-mission {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-history h2,
+.about-mission h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-history p,
+.about-mission p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Notre Mission et Vision */
+.about-mission {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-mission h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mission-section {
+    max-width: 900px;  /* Réduit la largeur maximale de la section */
+    margin: 0 auto;  /* Centrer la section */
+    padding: 40px;  /* Ajoute de l'espace à l'intérieur */
+}
+
+.mission-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mission-text {
+    flex: 1 1 30%; /* Ajuste la largeur des blocs de texte */
+    background-color: #f9f9f9;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.mission-text:hover {
+    transform: translateY(-5px); /* Effet au survol */
+}
+
+.mission-text img {
+    width: 95%;  /* Réduit la largeur des images à 60% de la largeur de leur conteneur */
+    height: 55%;  /* Maintient les proportions */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.mission-text h2 {
+    font-size: 22px;  /* Réduit la taille de police des titres */
+    margin-bottom: 10px;
+}
+
+.mission-text p {
+    font-size: 14px;  /* Réduit la taille du texte des paragraphes */
+    line-height: 1.5;
+}
+.mission-text p,
+.mission-text ul {
+    font-family: 'Arial', sans-serif; /* Assure-toi que c'est la même police utilisée ailleurs */
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333; /* Couleur du texte */
+}
+
+.mission-text ul {
+    padding-left: 20px; /* Décalage des puces */
+    margin-top: 10px;
+}
+
+.mission-text ul li {
+    margin-bottom: 3px; /* Espace entre les puces */
+}
+
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .mission-text {
+        flex: 1 1 100%; /* Les éléments prennent toute la largeur sur mobile */
+    }
+
+    .mission-section {
+        flex-direction: column;
+    }
+}
+ul {
+    list-style-type: circle; /* ou disc, square, etc. */
+}
+
+
+
+/* Section Équipe */
+.about-team {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-team h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Section Produits */
+.about-products {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-products h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-products p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Sections du footer */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}

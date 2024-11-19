@@ -1,0 +1,126 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* En-tête */
+.site-header {
+    background-color: #0f0101;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section des détails */
+.product-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.details-container {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Image produit */
+.product-image {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 2000px;
+    height: 700px;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+.product-info {
+    flex: 2;
+}
+
+.product-info h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #f1c40f;
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+}
+
+/* Boutons */
+button {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d4ac0d;
+}
+
+.order-summary {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #f1c40f;
+    border-radius: 5px;
+}
+
+/* Pied de page */
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0f0101;
+    color: white;
+}
