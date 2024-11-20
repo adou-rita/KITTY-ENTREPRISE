@@ -180,6 +180,27 @@
     background-color: #777;
 }
 
+/* Style pour centrer le bouton "Voir la Boutique" */
+.center-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.center-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s;
+}
+
+.center-button a:hover {
+    background-color: #777; /* Couleur différente au survol */
+}
+
+
 /* Section À propos */
 .about-section {
     padding: 40px 20px;
@@ -312,7 +333,7 @@
     right: 10px;
 }
 
-/* Footer */
+/* Sections du footer */
 .site-footer {
     background-color: #0f0101; /* Couleur de fond sombre */
     color: white;
@@ -330,7 +351,7 @@
     gap: 20px;
 }
 
-/* Sections du footer */
+/*  */
 .footer-logo, .footer-links, .footer-social, .footer-contact {
     flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
     text-align: center;

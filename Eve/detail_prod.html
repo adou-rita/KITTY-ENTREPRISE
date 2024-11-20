@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="./css/detail_prod.css">
 </head>
 <body>
+
+    <!-- Barre de menu avec logo et menu déroulant -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images_shop/logo1.PNG" alt="Logo" />
+               <!-- <span>Mes Petits Trucs Utiles</span> -->
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="menu">
+                <li><a href="home_shop">Accueil</a></li>
+                
+                <li><a href="apropos_shop.html">À propos</a></li>
+
+                
+                <li><a href="boutique_shop.html">Boutique</a></li>
+                
+                <!-- Menu déroulant pour service-->
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Autres Services</a>
+                    <div class="dropdown-content">
+                        <a href="#kitty-makeup">Kitty MakeUp</a>
+                        <a href="#kitty-content">Kitty Content</a>
+                        <a href="#residence-heaven">Residence Heaven</a>
+                    </div>
+                </li>
+                <li><a href="contact_shop.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <header class="site-header">
         <h1>Mes Petits Trucs Utiles</h1>
     </header>
@@ -36,16 +68,65 @@
                         </ul>
                     </p>
                     <div class="product-buttons">
-                        <button class="btn order-btn" onclick="location.href='commande.html'">Commander</button>
-                        <button class="btn back-btn" onclick="location.href='shop.html'">Retour à la Boutique</button>
+                        <button class="btn order-btn" onclick="location.href='commande_shop.html'">Commander</button>
+                        <button class="btn back-btn" onclick="location.href='boutique_shop.html'">Retour à la Boutique</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Mes Petits Trucs Utiles</h3>
+            <p>Mes petits trucs utiles est une Boutique de vente en ligne de gadgets et d’accessoires pour faciliter le quotidien.</p>
+            <img src="images_shop/logo1.PNG" alt="Logo" class="footer-logo-img">
+        </div>
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images_shop/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images_shop/icon-fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr"><img src="images_shop/icon-insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
         <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>

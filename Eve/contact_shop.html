@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mes Petits Trucs Utiles</title>
+    <link rel="stylesheet" href="./css/contact_shop.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+        <!-- Barre de menu avec logo et menu déroulant -->
+        <header>
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./images_shop/logo1.PNG" alt="Logo" />
+                   <!-- <span>Mes Petits Trucs Utiles</span> -->
+                </div>
+    
+                <!-- Menu principal -->
+                <ul class="menu">
+                    <li><a href="home_shop">Accueil</a></li>
+                    
+                    <li><a href="apropos_shop.html">À propos</a></li>
+    
+                    
+                    <li><a href="boutique_shop.html">Boutique</a></li>
+                    
+                    <!-- Menu déroulant pour service-->
+                    <li class="dropdown">
+                        <a href="#service" class="dropbtn">Autres Services</a>
+                        <div class="dropdown-content">
+                            <a href="#kitty-makeup">Kitty MakeUp</a>
+                            <a href="#kitty-content">Kitty Content</a>
+                            <a href="#residence-heaven">Residence Heaven</a>
+                        </div>
+                    </li>
+                    <li><a href="contact_shop.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+         <!-- Section avec une image en arrière-plan -->
+         <section class="background-section">
+            <div class="content">
+                <h1>Contactez-Nous</h1>
+            </div>
+        </section>
+
+    <!-- Section principale -->
+    <main>
+        <section class="contact-section">
+            <h2>Nous Contacter</h2>
+            <p>Vous avez une question ou besoin d'assistance ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+            <div class="contact-container">
+                <!-- Formulaire de contact -->
+                <form action="contact_confirmation.html" method="POST">
+                    <!-- Nom -->
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <!-- Téléphone -->
+                    <div class="form-group">
+                        <label for="phone">Téléphone :</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+
+                    <!-- Bouton d'envoi -->
+                    <div class="form-group">
+                        <button type="submit" class="btn submit-btn">Envoyer</button>
+                    </div>
+                </form>
+
+                <!-- Coordonnées -->
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Cocody</li>
+                        <li><i class="fas fa-phone"></i> +225 0747172822</li>
+                        <li><i class="fas fa-envelope"></i> linenelly.beugre@gmail.com</li>
+                        
+                        
+                    </ul>
+                    
+                    <p>Suivez-nous sur les réseaux sociaux :</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Mes Petits Trucs Utiles</h3>
+            <p>Mes petits trucs utiles est une Boutique de vente en ligne de gadgets et d’accessoires pour faciliter le quotidien.</p>
+            <img src="images_shop/logo1.PNG" alt="Logo" class="footer-logo-img">
+        </div>
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images_shop/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images_shop/icon-fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr"><img src="images_shop/icon-insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>

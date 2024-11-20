@@ -7,27 +7,64 @@
     <link rel="stylesheet" href="./css/com_shop.css">
 </head>
 <body>
+
+    <!-- Barre de menu avec logo et menu déroulant -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images_shop/logo1.PNG" alt="Logo" />
+               <!-- <span>Mes Petits Trucs Utiles</span> -->
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="menu">
+                <li><a href="home_shop">Accueil</a></li>
+                
+                <li><a href="apropos_shop.html">À propos</a></li>
+
+                
+                <li><a href="boutique_shop.html">Boutique</a></li>
+                
+                <!-- Menu déroulant pour service-->
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Autres Services</a>
+                    <div class="dropdown-content">
+                        <a href="#kitty-makeup">Kitty MakeUp</a>
+                        <a href="#kitty-content">Kitty Content</a>
+                        <a href="#residence-heaven">Residence Heaven</a>
+                    </div>
+                </li>
+                <li><a href="contact_shop.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- En-tête -->
     <header class="site-header">
         <h1>Mes Petits Trucs Utiles</h1>
     </header>
 
     <!-- Section principale -->
-    <main>
+     <div class="titre">
         <h2>Passer une Commande</h2>
-        <section class="product-details">
+     </div>
+    <main>
+        
+        <section class="product-commande">
             
             
-            <div class="details-container">
+            <div class="commande-container">
+                
                 <!-- Image du produit -->
                 <div class="product-image">
-                    <img src="./images_shop/AC5.png" alt="Produit sélectionné">
+                    <img src="./images_shop/AC10.png" alt="Produit sélectionné">
                 </div>
 
                 <!-- Formulaire -->
                 <div class="product-info">
                     <h2>Formulaire de Commande</h2>
-                    <form action="confirmation.html" method="POST">
+                    <form action="confirmation_shop.html" method="POST">
                         <!-- Informations personnelles -->
                         <div class="form-group">
                             <label for="name">Nom et Prénom :</label>
@@ -80,9 +117,56 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
-    <footer class="site-footer">
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Mes Petits Trucs Utiles</h3>
+            <p>Mes petits trucs utiles est une Boutique de vente en ligne de gadgets et d’accessoires pour faciliter le quotidien.</p>
+            <img src="images_shop/logo1.PNG" alt="Logo" class="footer-logo-img">
+        </div>
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images_shop/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images_shop/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images_shop/icon-fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr"><img src="images_shop/icon-insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
         <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
