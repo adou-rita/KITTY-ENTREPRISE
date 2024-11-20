@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images/bienvenue.jpeg'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.auth-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #555;
+}
+
+footer.site-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

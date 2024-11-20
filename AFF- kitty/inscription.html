@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+<body>
+    <!-- Barre de menu avec logo et menu déroulant -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo" />
+               <!-- <span>Mes Petits Trucs Utiles</span> -->
+            </div>
+
+            <!-- Menu principal 
+            <ul class="menu">
+                <li><a href="home_shop">Accueil</a></li>
+                
+                <li><a href="apropos_shop.html">À propos</a></li>
+
+                
+                <li><a href="boutique_shop.html">Boutique</a></li>
+                
+                 Menu déroulant pour service
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Autres Services</a>
+                    <div class="dropdown-content">
+                        <a href="../rita/home-kmakeup.html">Kitty MakeUp</a>
+                        <a href="#kitty-content">Kitty Content</a>
+                        <a href="#residence-heaven">Residence Heaven</a>
+                    </div>
+                </li>
+                <li><a href="contact_shop.html">Contact</a></li>
+            </ul>
+        </nav>
+-->
+    </header>
+
+     <!-- Section avec une image en arrière-plan -->
+     <section class="background-section">
+        <div class="content">
+            <h1>Inscription</h1>
+        </div>
+    </section>
+        <section class="auth-section">
+            <div class="auth-container">
+                <h2>Créer un compte</h2>
+                <p>Rejoignez-nous et commencez vos achats dès aujourd'hui !</p>
+                <form action="confirmation.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom complet :</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmez le mot de passe :</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez le mot de passe" required>
+                    </div>
+                    <button type="submit" class="btn">
+                        <a href="connexion.html" class="btn">S'inscrire</a>
+                    </button>
+                </form>
+                <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous ici</a>.</p>
+            </div>
+        </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Mes Petits Trucs Utiles. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

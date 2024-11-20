@@ -1,0 +1,408 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+
+/* Style général pour la section de bienvenue */
+.welcome-section {
+    display: flex;
+    align-items: center; /* Aligne le contenu au centre verticalement */
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+/* Style pour le texte */
+.welcome-section h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.welcome-section p {
+    max-width: 500px; /* Limite la largeur du paragraphe */
+    line-height: 1.6;
+}
+
+/* Style pour l'image */
+.welcome-section img {
+    max-width: 300px; /* Limite la largeur de l'image */
+    margin-left: 2em; /* Espace entre l'image et le texte */
+    border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column; /* Empile le texte et l'image sur les petits écrans */
+        text-align: center;
+    }
+
+    .welcome-section img {
+        margin-left: 0;
+        margin-top: 1em;
+        max-width: 80%; /* Limite la largeur de l'image sur mobile */
+    }
+}
+/* Style pour la barre de séparation */
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #000; /* Couleur noire */
+    margin: 2em 0; /* Espacement autour de la barre */
+}
+/* Section des services */
+.services-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    width: 250px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.service-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.service-item p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.service-item button {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-item button:hover {
+    background-color: #555;
+}
+/* Section principale */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Conteneur de l'image et du carrousel */
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.carousel img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+/* Conteneur du texte */
+.text {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+}
+/* Section principale */
+.service-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Conteneur du texte */
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.text button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.text button:hover {
+    background-color: #0056b3;
+}
+
+/* Conteneur de l'image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sections du footer */
+/* Sections du footer */
+.footer-logo, .footer-links,.footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,402 @@
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 100px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}/*****/
+
+
+/* Conteneur de la bannière */
+.static-banner {
+    position: relative;
+    width: 100%; /* Largeur complète de l'écran */
+    height: 300px; /* Hauteur de la bannière */
+    background-image: url('https://linlini.com/cdn/shop/files/accessoires-beaute.jpg?v=1718828545&width=1900');
+
+    background-size: cover; /* Ajuste l'image pour couvrir toute la bannière */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+/* Superposition de texte */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    background-color: rgba(0, 0, 0, 0.4); /* Ajoute un fond sombre avec transparence */
+}
+
+.text-overlay h1 {
+    color: #e910de; /* Texte blanc */
+    font-size: 36px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Tout en majuscules */
+    margin: 0; /* Enlève les marges par défaut */
+    text-align: center; /* Centre le texte */
+}
+/* Style global pour la bannière */
+.banner {
+    width: 100%;
+    padding: 20px;
+    background-color: #cc4747; /* Couleur de fond légère pour la bannière */
+}
+/****/
+
+
+
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #d10000;
+}
+
+/* En-tête */
+header {
+    background-color: #d6a9cf;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Carrousel */
+.carousel {
+    position: relative;
+    max-width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centrer horizontalement */
+    overflow: hidden;
+}
+
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+    width: 100%;
+    object-fit: cover;
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Section de description de la formation */
+.formation-description {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.formation-description h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.formation-description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}/*****/
+
+
+
+                                         /* Section générale */
+                                         .makeup-training-section {
+                                            padding: 30px;
+                                            background-color: #fdf5f9; /* Fond doux et léger */
+                                            font-family: Arial, sans-serif;
+                                            text-align: center;
+                                            border-radius: 10px;
+                                            margin: 20px auto;
+                                            max-width: 1800px;
+                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+                                        }
+                                        /* Titre principal */
+                                        .makeup-training-section h2 {
+                                            font-size: 2.5rem;
+                                            color: #d6336c; /* Couleur rose élégante */
+                                            margin-bottom: 20px;
+                                        }
+                                        
+                                        /* Texte d'introduction */
+                                        .makeup-training-section p {
+                                            font-size: 1.4rem;
+                                            color: #555; /* Texte gris doux */
+                                            line-height: 1.8;
+                                            margin-bottom: 30px;
+                                        }
+                                        
+                                        /* Conteneur des formations */
+                                        .training-highlights {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            flex-wrap: wrap; /* Adaptation pour les petits écrans */
+                                            gap: 20px;
+                                        }
+                                        
+                                        /* Style des éléments individuels */
+                                        .training-item {
+                                            background-color: #fff;
+                                            border-radius: 10px;
+                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+                                            text-align: center;
+                                            padding: 20px;
+                                            flex: 1 1 calc(33% - 20px); /* 3 items par ligne avec espacement */
+                                            max-width: calc(33% - 20px);
+                                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                        }
+                                        
+                                        /* Interaction au survol */
+                                        .training-item:hover {
+                                            transform: translateY(-10px); /* Soulèvement */
+                                            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Ombre amplifiée */
+                                        }
+                                        
+                                        /* Images des formations */
+                                        .training-item img {
+                                            width: 100%;
+                                            height: auto;
+                                            max-height: 200px;
+                                            object-fit: cover;
+                                            border-radius: 10px;
+                                            margin-bottom: 15px;
+                                        }
+                                        
+                                        /* Titres des formations */
+                                        .training-item h3 {
+                                            font-size: 1.5rem;
+                                            color: #333;
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        /* Descriptions des formations */
+                                        .training-item p {
+                                            font-size: 1rem;
+                                            color: #666; /* Texte gris doux */
+                                            line-height: 1.5;
+                                        }
+                                        
+                                        /* Media Queries pour les petits écrans */
+                                        @media (max-width: 768px) {
+                                            .training-highlights {
+                                                flex-direction: column; /* Alignement en colonne */
+                                                gap: 20px;
+                                            }
+                                        
+                                            .training-item {
+                                                flex: 1 1 100%; /* Prend toute la largeur */
+                                                max-width: 100%;
+                                            }
+                                        }
+                                        
+                                        
+
+
+
+
+/* Footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Sections du footer */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}

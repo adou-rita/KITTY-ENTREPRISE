@@ -1,0 +1,279 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #fdf9f9;
+}
+
+/* En-tête */
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #000000;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Section avec une image de fond */
+.commitment-section {
+    position: relative;
+    background-image: url('https://scontent.fabj3-2.fna.fbcdn.net/v/t1.6435-9/123701851_10214908795633102_7613072682808044551_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=bdeb5f&_nc_eui2=AeGn8dV0Hb_xjg3aeiYyzSgVUrP8XUNzE_dSs_xdQ3MT9wW2QpgZxHCisFOEcNkPyDvtaUwm2bN7p7TmCpGhPxrO&_nc_ohc=K5iproVTesMQ7kNvgFrGEFN&_nc_zt=23&_nc_ht=scontent.fabj3-2.fna&_nc_gid=AaaYMFg1z8KBWCI2n2flea_&oh=00_AYBQ8WkAFS2Z604XWxevTq9SJbKqHKhFLIiMJm9t5rPokQ&oe=6763EBCE');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 100px; /* Ajustez selon vos besoins */
+    color: white;
+    text-align: center;
+    width: 100%;
+
+    height: 400px; /* Ajustez la hauteur si nécessaire */
+}
+
+/* Superposition d'un filtre pour rendre le texte lisible */
+.commitment-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité si nécessaire */
+    z-index: 1;
+}
+
+/* Contenu positionné au-dessus de l'image */
+.commitment-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; /* Ajuste la largeur maximale du texte */
+    margin: 0 auto;
+}
+
+.commitment-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.commitment-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    color: #000000;
+}
+
+.contact-form .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #000000;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Sections du footer */
+/* Sections du footer */
+.footer-logo, .footer-links,.footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 60px; /* Taille du logo */
+    height: 50px; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {  
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    text-align: center;
+}

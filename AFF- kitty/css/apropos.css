@@ -1,0 +1,430 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #030303;
+    background-color: #fffcfc;
+}
+
+
+
+
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+/* Style des liens */
+.navbar-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px; /* Bords arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.navbar-links a:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu a:hover {
+    background-color: #292828;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #555;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section À Propos */
+.about-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.nos-services {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    padding: 50px 20px; /* Espacement interne pour aérer */
+    text-align: center; /* Centrer le texte */
+}
+
+.nos-services  h1 {
+    font-size: 2.5rem; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    font-weight: bold;
+}
+
+.nos-services  p {
+    font-size: 1.2rem; /* Taille du texte */
+    line-height: 1.6; /* Hauteur des lignes pour améliorer la lisibilité */
+    max-width: 800px; /* Limite la largeur pour un meilleur rendu */
+    margin: 0 auto; /* Centre le texte horizontalement */
+}
+
+
+
+
+.nos-services  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Section des services principaux */
+.main-services {
+    padding: 2em;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Par défaut : 100% pour empiler */
+    text-align: center;
+}
+
+.service img {
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+/* Disposition horizontale */
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.flex-row-reverse {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.service p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.service button {
+    background-color: #000000;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service button:hover {
+    background-color:#000000;
+}
+
+/* Style pour Kitty Confort et Mes Petits Trucs Utiles */
+.service-container:last-child .service {
+    width: calc(50% - 10px); /* Divise l'espace pour les deux services côte à côte */
+}
+
+/* Section avec une image de fond */
+.commitment-section {
+    position: relative;
+    background-image: url('https://scontent.fabj3-2.fna.fbcdn.net/v/t1.6435-9/123701851_10214908795633102_7613072682808044551_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=bdeb5f&_nc_eui2=AeGn8dV0Hb_xjg3aeiYyzSgVUrP8XUNzE_dSs_xdQ3MT9wW2QpgZxHCisFOEcNkPyDvtaUwm2bN7p7TmCpGhPxrO&_nc_ohc=K5iproVTesMQ7kNvgFrGEFN&_nc_zt=23&_nc_ht=scontent.fabj3-2.fna&_nc_gid=AaaYMFg1z8KBWCI2n2flea_&oh=00_AYBQ8WkAFS2Z604XWxevTq9SJbKqHKhFLIiMJm9t5rPokQ&oe=6763EBCE');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 100px; /* Ajustez selon vos besoins */
+    color: white;
+    text-align: center;
+    width: 100%;
+
+    height: 400px; /* Ajustez la hauteur si nécessaire */
+}
+
+/* Superposition d'un filtre pour rendre le texte lisible */
+.commitment-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité si nécessaire */
+    z-index: 1;
+}
+
+/* Contenu positionné au-dessus de l'image */
+.commitment-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; /* Ajuste la largeur maximale du texte */
+    margin: 0 auto;
+}
+
+.commitment-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.commitment-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Section Inscription */
+.subscribe-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    color: white;
+}
+
+.subscribe-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-section input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscribe-section button {
+    background-color: #555;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-section button:hover {
+    background-color:#000000;
+}
+
+/* Sections du footer */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    background-color:#000000;
+    color: #fff;
+}
+
+/* Sections du footer */
+/* Sections du footer */
+.footer-logo, .footer-links,.footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Taille du logo */
+    height: auto; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    text-align: center;
+}

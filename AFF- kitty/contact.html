@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Kitty Entreprise</title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo" />
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                
+                <li><a href="#about">À propos</a></li>
+
+                
+                
+                <!-- Menu déroulant pour service-->
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Nos Services</a>
+                    <div class="dropdown-content">
+                        <a href="#kitty-makeup">Kitty MakeUp</a>
+                        <a href="#kitty-content">Kitty Content</a>
+                        <a href="#residence-heaven">Residence Heaven</a>
+                        <a href="#residence-heaven">Boutiques</a>
+
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Section Contact -->
+    <section class="commitment-section">
+        <div class="commitment-content">
+            <h1>Contactez-nous</h1>
+            <p>N'hésitez pas à solliciter notre équipe pour toute demande d'information, de réservation ou de devis. Nous nous tenons à votre entière disposition.</p>
+        </div>
+    </section>
+    <section
+         class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Nom et Prénoms" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        
+    </section>
+
+   
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Kitty Entreprise</h3>
+            <p>Kitty entreprises est une entreprise de prestation de services dans les domaines de la beauté, les résidences meublées, la création de contenu et la vente en ligne d’articles divers.</p>
+            <br>
+            <img src="./images/logo.png" alt="Logo" class="footer-logo-img">
+        </div>
+    
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><ahref="#kitty-makeup">Kitty MakeUp</a> </li>
+                <li><a href="#kitty-content">Kitty Content</a> </li>
+                <li><a href="#residence-heaven">Residence Heaven</a> </li>
+                <li><a href="#residence-heaven">Boutiques</a> </li>
+  
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images/icon-fb.png" alt="Facebook"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+
+                <a href="#"><img src="images/icon-insta.png" alt="Instagram"></a>
+                <a href="#"><img src="images/tik-tok.png" alt="tik-tok"></a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Kitty Entreprise. Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <script>// script.js
+        document.querySelector('.contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert("Merci pour votre message ! Nous vous répondrons bientôt.");
+        });
+        </script>
+</body>
+</html>
