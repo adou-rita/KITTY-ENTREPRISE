@@ -82,7 +82,7 @@ body {
 
 /* Section avec une image en arrière-plan */
 .background-section {
-    background-image: url('../images/bg2.png'); /* Assure-toi que le chemin est correct */
+    background-image: url('../images/bg-b.png'); /* Assure-toi que le chemin est correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,112 +132,6 @@ body {
 .background-section .btn:hover {
     background-color: #777;
 }
-
-/* Conteneur global des catégories */
-.categories-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #d6336c;
-    text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-section.categories-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #d6336c;
-    text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-/* Style des catégories */
-.categories {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-/* Style pour chaque catégorie */
-.category {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    width: 300px;
-    cursor: pointer; /* Changement de curseur pour l'interaction */
-    transition: transform 0.3s ease; /* Effet de transition */
-}
-
-/* Effet au survol */
-.category:hover {
-    transform: scale(1.1); /* Agrandit la catégorie */
-}
-
-/* Conteneur pour l'image de la catégorie */
-.category-image {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Image de la catégorie */
-.category-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Titre de la catégorie */
-.category h3 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Fenêtre popup pour afficher les détails de la catégorie */
-.details-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(61, 60, 60, 0.6);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: none; /* Caché par défaut */
-    z-index: 1000;
-}
-
-.details-popup h2 {
-    margin-bottom: 10px;
-}
-
-.details-popup button {
-    background-color: #555;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.details-popup button:hover {
-    background-color: #777;
-}
-
-
-
 /* Liste des produits */
 .product-list {
     padding-right: 20px; /* Ajoute un espace interne à droite */
@@ -330,9 +224,7 @@ section.categories-section h2 {
     background-color: #777; 
 }
 
-
-
-/* Style pour centrer le bouton "Voir Plus" */
+/* Style pour centrer le bouton "Retour" */
 .center-button {
     margin-top: 30px;
     text-align: center;
@@ -352,140 +244,6 @@ section.categories-section h2 {
     background-color: #777; /* Couleur différente au survol */
 }
 
-
-/* Section À propos */
-.about-section {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Pour rendre la section réactive sur les petits écrans */
-}
-
-.about-image {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.about-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    color: #d6336c;
-    margin-bottom: 10px;
-}
-
-.about-text p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Section Notre Mission et Vision */
-.about-mission {
-    background-color: #fff;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.about-mission h2 {
-    font-size: 28px;
-    color: #d6336c;
-    margin-bottom: 10px;
-}
-
-.mission-section {
-    max-width: 900px;  /* Réduit la largeur maximale de la section */
-    margin: 0 auto;  /* Centrer la section */
-    padding: 40px;  /* Ajoute de l'espace à l'intérieur */
-}
-
-.mission-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.mission-text {
-    flex: 1 1 30%; /* Ajuste la largeur des blocs de texte */
-    background-color: #f9f9f9;
-    padding: 60px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.mission-text:hover {
-    transform: translateY(-5px); /* Effet au survol */
-}
-
-.mission-text img {
-    width: 95%;  /* Réduit la largeur des images à 60% de la largeur de leur conteneur */
-    height: 55%;  /* Maintient les proportions */
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.mission-text h2 {
-    font-size: 22px;  /* Réduit la taille de police des titres */
-    margin-bottom: 10px;
-}
-
-.mission-text p {
-    font-size: 14px;  /* Réduit la taille du texte des paragraphes */
-    line-height: 1.5;
-}
-.mission-text p,
-.mission-text ul {
-    font-family: 'Arial', sans-serif; /* Assure-toi que c'est la même police utilisée ailleurs */
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333; /* Couleur du texte */
-}
-
-.mission-text ul {
-    padding-left: 20px; /* Décalage des puces */
-    margin-top: 10px;
-}
-
-.mission-text ul li {
-    margin-bottom: 3px; /* Espace entre les puces */
-}
-
-
-/* Styles responsive */
-@media (max-width: 768px) {
-    .mission-text {
-        flex: 1 1 100%; /* Les éléments prennent toute la largeur sur mobile */
-    }
-
-    .mission-section {
-        flex-direction: column;
-    }
-}
-ul {
-    list-style-type: circle; /* ou disc, square, etc. */
-}
 
 
 /* Sections du footer */

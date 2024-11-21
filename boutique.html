@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Petits Trucs Utiles</title>
+    <title>Mes Petits Trucs Utiles | Kitty Entreprise</title>
     <link rel="stylesheet" href="./css/boutique.css">
 </head>
 <body>
@@ -38,70 +38,145 @@
     </header>
 
      <!-- Section avec une image en arrière-plan -->
+      <section>
      <section class="background-section">
         <div class="content">
             <h1>Bienvenue sur Mes Petits Trucs Utiles</h1>
             <p>Découvrez notre collection unique d'articles utiles pour la vie quotidienne.</p>
-            <a href="contact.html" class="btn">Nous Contacter</a>
+            <a href="contact.html" class="btn_1">Nous Contacter</a>
+        </div>
+
+    </section class="categories-section">
+    <h2 style="text-align: center; color: #d6336c;">Nos Catégories</h2>
+    <section class="categories">
+        <div class="category" onclick="showDetails('Encensoirs Design')">
+            <div class="category-image">
+                <img src="./images/encensoirs.jpg" alt="Catégorie 1">
+            </div>
+            <h3>Encensoirs Design</h3>
+        </div>
+    
+        <div class="category" onclick="showDetails('Gourdes Motivatrices')">
+            <div class="category-image">
+                <img src="./images/gourdes.png" alt="Catégorie 2">
+            </div>
+            <h3>Gourdes Motivatrices</h3>
+        </div>
+    
+        <div class="category" onclick="showDetails('Vêtements & Accessoires')">
+            <div class="category-image">
+                <img src="./images/vetements1.jpg" alt="Catégorie 3">
+            </div>
+            <h3>Vêtements & Accessoires</h3>
         </div>
     </section>
-
-    <!-- Section de galerie de produits -->
-<section class="product-gallery">
-    <h2>Nos Produits</h2>
-    <div class="gallery">
-        <!-- Produit 1 -->
-        <div class="product-card">
-            <img src="./images/AC2.png" alt="Produit 1">
-            <h3>Ancensoire</h3>
-            <p>Description du produit 1.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
-        <!-- Produit 2 -->
-        <div class="product-card">
-            <img src="./images/G1.png" alt="Produit 2">
-            <h3>Gourde Motivatrice</h3>
-            <p>Description du produit 2.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
-        <!-- Produit 3 -->
-        <div class="product-card">
-            <img src="./images/sac4.png" alt="Produit 3">
-            <h3>Sac Banane</h3>
-            <p>Description du produit 3.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
-        <!-- Produit 4 -->
-        <div class="product-card">
-            <img src="./images/AC10.png" alt="Produit 4">
-            <h3>Charbon d'encens</h3>
-            <p>Description du produit 4.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
-        <!-- Produit 5 -->
-        <div class="product-card">
-            <img src="./images/G3.png" alt="Produit 5">
-            <h3>Gourde</h3>
-            <p>Description du produit 5.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
-        <!-- Produit 6 -->
-        <div class="product-card">
-            <img src="./images/sac7.png" alt="Produit 6">
-            <h3>Sac</h3>
-            <p>Description du produit 6.</p>
-            <a href="commande.html" class="btn order-btn">Commander</a>
-            <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
-        </div>
+    
+    <!-- Div pour afficher les détails de la catégorie -->
+    <div id="category-details" class="details-popup">
+        <h2 id="category-name">Nom de la catégorie</h2>
+        <p id="category-description">Description de la catégorie</p>
+        <button onclick="closeDetails()">Fermer</button>
     </div>
+    
+</section>
+    
+    <!-- Section Liste des Produits -->
+    <section class="product-list">
+        <h2>Produits</h2>
+            <section class="product-gallery">
+                <div class="product-item">
+                    <img src="./images/AC8.png" alt="Produit 1">
+                    <h3>Encensoirs</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="./images/sac7.png" alt="Produit 1">
+                    <h3>Sac</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./images//G2.png" alt="Produit 1">
+                    <h3>Gourde Motivatrice</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./images/AC4.png" alt="Produit 1">
+                    <h3>Encensoirs</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./images/AC2.png" alt="Produit 1">
+                    <h3>Encensoirs</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./images/sac4.png" alt="Produit 1">
+                    <h3>Gourde Motivatrice</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="./images/AC10.png" alt="Produit 1">
+                    <h3>Charbon D' Encens</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./images/G3.png" alt="Produit 1">
+                    <h3>Gourde Motivatrice</h3>
+                    <p class="price">15 FCFA</p>
+                    <p class="description">Restez hydraté et motivé avec style.</p>
+                    <div class="button-container">
+                        <a href="commande_shop.html" class="btn order-btn">Commander</a>
+                        <a href="detail_prod.html" class="btn details-btn">Plus de détail</a>
+                    </div>
+                </div>
+                
+            </section>
+        
     <!-- Bouton centré -->
     <div class="center-button">
-        <a href="boutique.html" class="btn">Voir Plus</a>
+        <a href="produits.html" class="btn">Voir Plus</a>
     </div>
 </section>
 
@@ -124,44 +199,33 @@
     </div>
 </section>
 
-<!-- Section Carrousel de Catégories avec des images en arrière-plan -->
-<section class="category-carousel">
-    <h2>Nos Catégories</h2>
-    <div class="carousel-container">
-        <button class="carousel-btn prev-btn">&#10094;</button>
-        <div class="carousel">
-            <!-- Item 1 -->
-            <div class="carousel-item" style="background-image: url('images/AC9.png');">
-                <div class="overlay">
-                    <div class="content">
-                        <h3>Encensoirs Design</h3>
-                        <p>Parfumez votre intérieur tout en ajoutant une touche de décoration unique.</p>
-                    </div>
-                </div>
+<!-- Section Notre Mission et Vision -->
+<section class="about-mission">
+    <h2>Notre Mission & Vision</h2>
+    <section class="mission-section">
+        <div class="mission-content">
+            <div class="mission-text">
+                <img src="./images/vision.jpg" alt="À propos de nous">
+                <h2>Mission & Vision</h2>
+                <p>Notre mission est de rendre chaque jour plus facile et agréable grâce à des produits qui allient praticité et style. Nous aspirons à offrir à nos clients une expérience d'achat en ligne fluide et enrichissante.</p>
             </div>
-            <!-- Item 2 -->
-            <div class="carousel-item" style="background-image: url('images/gourdess.jpg');">
-                <div class="overlay">
-                    <div class="content">
-                        <h3>Gourdes Motivatrices</h3>
-                        <p>Les gourdes motivatrices sont là pour vous accompagner tout au long de la journée.</p>
-                    </div>
-                </div>
+            <div class="mission-text">
+                <img src="./images/valeur.jpeg" alt="À propos de nous">
+                <h2>Nos Valeurs</h2>
+                <p>
+                    Chez Mes Petits Trucs Utiles, nous croyons en l'importance de rendre la vie quotidienne plus simple et agréable. Nous valorisons:
+                </p>
+                <ul>
+                    <li>Innovation : Des produits pratiques et modernes.</li>
+                    <li>Qualité : Des articles fiables et durables.</li>
+                    <li>Satisfaction Client : Vous offrir la meilleure expérience possible.</li>
+                </ul>
             </div>
-            <!-- Item 3 -->
-            <div class="carousel-item" style="background-image: url('images/vetements1.jpg');">
-                <div class="overlay">
-                    <div class="content">
-                        <h3>Vêtements & Accessoires</h3>
-                        <p>L’accessoire de mode intemporel qu’il faut à votre garde-robe.</p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
-        
-        <button class="carousel-btn next-btn">&#10095;</button>
-    </div>
+    </section>
 </section>
+
 
 
 <!-- Footer -->
@@ -216,45 +280,27 @@
 </footer>
 
 
-
-
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carousel = document.querySelector('.carousel');
-        const items = document.querySelectorAll('.carousel-item');
-        const nextBtn = document.querySelector('.next-btn');
-        const prevBtn = document.querySelector('.prev-btn');
-        
-        let currentIndex = 0;
+    // Fonction pour afficher les détails de la catégorie lorsqu'on clique sur une catégorie
+    function showDetails(categoryName) {
+        const detailsPopup = document.getElementById('category-details');
+        const categoryNameElement = document.getElementById('category-name');
+        const categoryDescription = document.getElementById('category-description');
+    
+    // Met à jour le nom et la description de la catégorie
+    categoryNameElement.textContent = categoryName;
+    categoryDescription.textContent = `Voici plus de détails sur ${categoryName}. Cette catégorie contient des produits passionnants et diversifiés.`;
 
-        function updateCarousel() {
-            // Taille d'un item
-            const itemWidth = items[0].offsetWidth;
-            // Déplacer le carrousel
-            carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
+    // Affiche la fenêtre popup
+    detailsPopup.style.display = 'block';
+}
 
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < items.length - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
-
-        // Assurer que le carrousel s'affiche correctement au chargement
-        window.addEventListener('resize', updateCarousel);
-    });
+// Fonction pour fermer la fenêtre popup
+function closeDetails() {
+    const detailsPopup = document.getElementById('category-details');
+    detailsPopup.style.display = 'none';
+}
 </script>
-
-
-
 
 
 </body>
