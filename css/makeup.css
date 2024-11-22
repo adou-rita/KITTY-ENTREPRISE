@@ -1,0 +1,529 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #afadad;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #afadad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #afadad;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}/****/
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images/image.png');   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.background-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.background-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.background-section .btn:hover {
+    background-color: #777;
+}/************************/
+
+                                        /* Section générale make up */
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style général de la bannière */
+.banner-description {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(4, 1, 1, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1800px;
+    overflow: hidden;
+}
+/* Conteneur pour l'image et le texte */
+.image-text-container {
+    display: flex; /* Active le mode Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    justify-content: center; /* Centre horizontalement l'image et le texte */
+    gap: 40px; /* Ajoute de l'espace entre l'image et le texte */
+    flex-wrap: wrap; /* Permet l'adaptation en colonnes sur petits écrans */
+}
+
+
+/* Style pour l'image */
+.image-text-container img {
+    margin-right: 200px; /* Ajoute un espace de 40px à droite de l'image */
+    width: 50%; /* Ajuste la largeur de l'image */
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur du texte */
+.image-text-container .text {
+    width: 50%;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif; /* Police de texte mise à jour */
+}
+
+/* Style du titre */
+.image-text-container .text h2 {
+    font-size: 2rem;
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+/* Style des paragraphes */
+.image-text-container .text p {
+    color: #555;
+    font-size: 1rem;
+}
+
+                          /* Style général pour la section skincare */
+                          .skincare-section {
+                            text-align: center;
+                            background-color: #fff5f7; /* Rose clair pour le fond */
+                            padding: 50px 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre légère */
+                            margin: 20px auto;
+                            max-width: 1800px; /* Limite la largeur */
+                        }
+                        
+                        /* Titre de la section */
+                        .skincare-section h2 {
+                            font-size: 2.5rem;
+                            color: #d6336c; /* Couleur rose vif */
+                            margin-bottom: 20px;
+                            font-weight: bold;
+                        }
+                        
+                        /* Paragraphe principal */
+                        .skincare-section p {
+                            font-size: 1.2rem;
+                            color: #333; /* Texte noir/gris */
+                            line-height: 1.8;
+                            margin-bottom: 40px;
+                        }
+                        
+                        /* Conteneur des points forts */
+                        .skincare-highlights {
+                            display: flex;
+                            justify-content: center;
+                            gap: 20px;
+                            flex-wrap: wrap; /* Pour s'adapter aux petits écrans */
+                        }
+                        
+                        /* Style pour chaque point fort */
+                        .highlight {
+                            background-color: #ffffff; /* Fond blanc */
+                            border: 1px solid #ddd; /* Bordure fine grise */
+                            border-radius: 10px;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+                            padding: 20px;
+                            width: 300px; /* Largeur fixe */
+                            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+                        }
+                        
+                        /* Zoom sur survol */
+                        .highlight:hover {
+                            transform: translateY(-10px);
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+                        }
+                        
+                        /* Images */
+                        .highlight img {
+                            border-radius: 10px;
+                            margin-bottom: 15px;
+                            width: 100%; /* Ajuste à la largeur du conteneur */
+                            height: auto; /* Maintient les proportions */
+                            object-fit: cover; /* S'assure que l'image reste proportionnelle */
+                        }
+                        
+                        /* Titres des points forts */
+                        .highlight h3 {
+                            font-size: 1.5rem;
+                            color: #d6336c; /* Même couleur que le titre principal */
+                            margin-bottom: 10px;
+                        }
+                        
+                        /* Texte des points forts */
+                        .highlight p {
+                            font-size: 1rem;
+                            color: #555; /* Gris doux */
+                            line-height: 1.6;
+                        }
+                        
+                        
+
+
+
+                        /* Section principale */
+.kitty-makeup-mission {
+    background: linear-gradient(135deg, #f8e1f4, #fdf1f9);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1800px;
+}
+
+/* Titre principal */
+.kitty-makeup-mission h2 {
+    font-size: 2.5rem;
+    color: #d6336c; /* Rose vif */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Texte de description */
+.kitty-makeup-mission p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Valeurs et disposition */
+.valeur-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cartes de valeur */
+.valeur-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.valeur-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images dans les cartes */
+.valeur-card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Titres des cartes */
+.valeur-card h3 {
+    font-size: 1.5rem;
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+/* Texte des cartes */
+.valeur-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Style des emojis */
+.kitty-makeup-mission h2, 
+.kitty-makeup-mission p, 
+.valeur-card h3, 
+.valeur-card p {
+    line-height: 1.8;
+}
+
+.kitty-makeup-mission h2 span,
+.valeur-card h3 span {
+    font-size: 1.2rem;
+}
+
+/****************************************/
+
+
+/* Sections du footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/*  */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 60px; /* Taille du logo */
+    height: 60px; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.btn-prendre-rdv {
+    display: inline-block;
+    padding: 8px 15px; /* Réduit l'espacement interne */
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px; /* Taille de texte réduite */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto; /* Ajuste automatiquement à la taille du texte */
+    text-align: center; /* Centre le texte */
+}
+
+.btn-prendre-rdv:hover {
+    background-color: #ff4c4c;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-learn-more {
+    padding: 8px 15px; /* Réduit l'espacement interne */
+    background-color: #ff6b6b; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Retire la bordure par défaut */
+    border-radius: 5px; /* Arrondit les coins */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+    width: 120px; /* Largeur fixe */
+    text-align: center; /* Centre le texte */
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet moderne */
+}
+
+.btn-learn-more:hover {
+    background-color: #ff4c4c; /* Couleur au survol */
+}
