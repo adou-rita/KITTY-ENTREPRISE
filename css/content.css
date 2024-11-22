@@ -253,22 +253,22 @@ body {
                                             
                                             .image-text-container {
                                                 display: flex;
-                                                align-items: center;
-                                                justify-content: flex-start;
-                                                gap: 20px;
+                                                align-items: center;  /* Centre les éléments verticalement */
+                                                justify-content: flex-start; /* Aligne à gauche */
+                                                gap: 20px;  /* Espace entre la vidéo et le texte */
                                                 max-width: 1200px;
                                                 margin: 0 auto;
                                             }
                                             
                                             .image-text-container video {
-                                                width: 50%; /* Ajuste la taille de la vidéo, change en fonction de tes besoins */
-                                                height: auto;
-                                                border-radius: 10px; /* Si tu veux des coins arrondis pour la vidéo */
+                                                width: 50%; /* Ajuste la taille de la vidéo (50% de la largeur du conteneur) */
+                                                height: auto; /* Garde le ratio de la vidéo */
+                                                border-radius: 10px; /* Coins arrondis pour la vidéo */
                                                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
                                             }
                                             
                                             .text {
-                                                width: 50%; /* Le texte occupe également 50% de l'espace */
+                                                width: 50%; /* Le texte occupe 50% de l'espace */
                                                 text-align: left;
                                             }
                                             
@@ -633,4 +633,131 @@ h1, h2, h3 {
     border-top: 1px solid #555;
     padding-top: 10px;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Conteneur général pour chaque section */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Section de Description de Kitty Content */
+.kitty-content-description {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.kitty-content-description h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.kitty-content-description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Captation Photo et Vidéo */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-text-container img, .image-text-container video {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    width: 50%;
+    text-align: left;
+}
+
+.text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Création de contenu illustratif */
+.content-creation {
+    background-color: #eaeaea;
+    padding: 60px 0;
+}
+
+.content-creation h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.content-creation .image-text-container {
+    display: flex;
+    gap: 20px;
+}
+
+.content-creation img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission et Valeurs */
+.mission-values {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.mission-values h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.mission-values-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.mission, .values {
+    width: 45%;
+}
+
+.mission h3, .values h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.mission p, .values ul {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.values ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
