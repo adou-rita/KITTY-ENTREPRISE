@@ -130,7 +130,7 @@ body {
 /* Section À propos */
 .about-section {
     background-color: #f9f9f9;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .about-container {
@@ -204,8 +204,8 @@ body {
 
 /* Section Services */
 .services-section {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+    background-color: #e3e1e1;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -243,8 +243,8 @@ body {
 }
 
 .service-item img {
-    width: 80px;
-    height: 80px;
+    width: 240px;
+    height: 180px;
     margin-bottom: 20px;
 }
 
@@ -258,6 +258,7 @@ body {
     font-size: 1em;
     color: #666;
     line-height: 1.5;
+    text-align: justify; /* Ajout pour justifier le texte */
 }
 
 /* Responsive Design */
@@ -277,6 +278,63 @@ body {
     .service-item p {
         font-size: 0.9em;
     }
+}
+
+/* Section carrousel */
+.carousel-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.carousel-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur du carrousel */
+.carousel-container {
+    overflow-x: auto; /* Permet le défilement horizontal */
+    white-space: nowrap; /* Évite le retour à la ligne des images */
+    scrollbar-width: none; /* Masque les barres de défilement pour Firefox */
+    -ms-overflow-style: none; /* Masque les barres de défilement pour IE et Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Masque les barres de défilement pour Chrome, Safari et Opera */
+}
+
+/* Images du carrousel */
+.carousel img {
+    width: 200px; /* Ajuste la taille des images */
+    height: auto;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.1); /* Effet zoom au survol */
+}
+
+/* Bouton Voir la boutique */
+.shop-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #555;
 }
 
 
