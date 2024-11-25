@@ -79,11 +79,11 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}/****/
+}
 
 /* Section avec une image en arrière-plan */
 .background-section {
-    background-image: url('../images/image.png');
+    background-image: url('../images/apropos.jpg'); /* Assure-toi que le chemin est correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,72 +125,8 @@ body {
 
 .background-section .btn:hover {
     background-color: #777;
-}/************************/
-
-
-
-
-#kitty-content {
-    font-family: Arial, sans-serif;
-    margin-top: 80px; /* Pour s'assurer que le contenu n'est pas masqué par la barre de navigation */
 }
 
-#hero {
-    background-size: cover;
-    background-position: center;
-    padding: 100px;
-    color: #fff;
-    text-align: center;
-}
-
-#services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 50px;
-    background-color: #f9f9f9;
-}
-
-.service-item img {
-    width: 50px;
-    height: 50px;
-}
-
-#portfolio {
-    padding: 50px;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-}
-
-#testimonials {
-    background-color: #f1f1f1;
-    padding: 50px;
-    text-align: center;
-}
-
-.testimonial {
-    font-style: italic;
-}
-
-#cta {
-    background-color: #d6336c;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-}
-
-#cta button {
-    background-color: #fff;
-    color: #d6336c;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-}
 
 
 

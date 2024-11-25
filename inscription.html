@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Commande | Kitty Entreprise</title>
-        <link rel="stylesheet" href="./css/commande.css">
+        <title>Inscription | Kitty Entreprise</title>
+    <link rel="stylesheet" href="./css/auth.css">
     </head>
     <body>
     
@@ -41,61 +41,38 @@
          <!-- Section avec une image en arrière-plan -->
          <section class="background-section">
             <div class="content">
-                <h1>Commande</h1>
-                
+        
             </div>
         </section>
-    
-        <section class="commande-section">
-            <h1>Passer une Commande</h1>
-            <div class="commande-container">
-                <!-- Image du produit -->
-                <div class="commande-image">
-                    <img src="./images/G2.png" alt="Image du produit" />
-                </div>
-        
-                <!-- Formulaire de commande -->
-                <div class="commande-form-container">
-                    <form action="/submit-order" method="POST" class="commande-form">
-                        <div class="form-group">
-                            <label for="nom">Nom complet</label>
-                            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adresse email</label>
-                            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="adresse">Adresse de livraison</label>
-                            <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse de livraison" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="produit">Produit</label>
-                            <select id="produit" name="produit" required>
-                                <option value="chaussures">Chaussures</option>
-                                <option value="sacs">Sacs à main</option>
-                                <option value="accessoires">Accessoires</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="quantite">Quantité</label>
-                            <input type="number" id="quantite" name="quantite" placeholder="Quantité" min="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="moyen-paiement">Moyen de paiement</label>
-                            <select id="moyen-paiement" name="moyen-paiement" required>
-                                <option value="carte">Carte bancaire</option>
-                                <option value="paypal">PayPal</option>
-                                <option value="virement">Virement bancaire</option>
-                                <option value="paiement">paiement à la livraison</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="commande-btn">Valider la commande</button>
-                    </form>
-                </div>
+<br>
+<br>
+        <section class="auth-section">
+            <div class="auth-container">
+                <h2>Inscription</h2>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="fullname">Nom Complet</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Entrez votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de Passe</label>
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmer le Mot de Passe</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                    </div>
+                    <button type="submit" class="auth-btn">S'inscrire</button>
+                    <p class="auth-text">Déjà un compte ? <a href="connexion.html">Se connecter</a></p>
+                </form>
             </div>
         </section>
-        
+<br>
+<br>
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">

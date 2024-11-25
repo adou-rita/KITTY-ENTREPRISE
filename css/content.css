@@ -244,67 +244,9 @@ body {
 
 
 
-                                             /*******************captation video **************/
-                                             .banner-description {
-                                                width: 100%;
-                                                padding: 40px 20px;
-                                                background-color: #f9f9f9;
-                                            }
-                                            
-                                            .image-text-container {
-                                                display: flex;
-                                                align-items: center;  /* Centre les éléments verticalement */
-                                                justify-content: flex-start; /* Aligne à gauche */
-                                                gap: 20px;  /* Espace entre la vidéo et le texte */
-                                                max-width: 1200px;
-                                                margin: 0 auto;
-                                            }
-                                            
-                                            .image-text-container video {
-                                                width: 50%; /* Ajuste la taille de la vidéo (50% de la largeur du conteneur) */
-                                                height: auto; /* Garde le ratio de la vidéo */
-                                                border-radius: 10px; /* Coins arrondis pour la vidéo */
-                                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-                                            }
-                                            
-                                            .text {
-                                                width: 50%; /* Le texte occupe 50% de l'espace */
-                                                text-align: left;
-                                            }
-                                            
-                                            .text h2 {
-                                                font-size: 28px;
-                                                color: #333;
-                                                margin-bottom: 20px;
-                                            }
-                                            
-                                            .text pre {
-                                                font-size: 16px;
-                                                color: #555;
-                                                line-height: 1.5;
-                                            }
-                                            
-                                            
-/*********************************************/
 
 
 
-
-/* Global Styling */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-h1, h2, h3 {
-    margin: 0;
-}
-
-#kitty-content-estrat {
-    margin: 20px auto;
-}
 
 
 
@@ -398,124 +340,329 @@ h1, h2, h3 {
 }/******************************************/
 
 
-.kitty-content {
+
+
+
+
+
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
     position: relative;
-    width: 100%;
-    height: 50vh; /* Prend toute la hauteur de la fenêtre */
-    background-image: url('../images/content1.png'); /* Image de fond */
-    background-size: cover; /* Couvre toute la zone sans déformer l'image */
-    background-position: center; /* Centre l'image */
+    margin: 0 auto; /* Centre le carrousel */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Couleur du texte sur l'image */
-}
-
-.content-overlay {
-    text-align: center;
-    padding: 20px;
-    max-width: 80%;
-    background-color: rgba(0, 0, 0, 0.5); /* Légère transparence pour rendre le texte plus lisible */
-    border-radius: 10px;
-}
-
-.kitty-content h2 {
-    font-size: 36px; /* Taille du titre */
-    margin-bottom: 20px;
-}
-
-.kitty-content p {
-    font-size: 18px; /* Taille du texte */
-    line-height: 1.6;
-}
-
-/********************************/
-
-
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centrer le carrousel */
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
 
 
 
 
 
                                                           /* Portfolio Section */
-.estrat-portfolio {
-    padding: 60px 20px;
-    text-align: center;
+                                                          .estrat-portfolio {
+                                                            padding: 60px 20px;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .estrat-portfolio h2 {
+                                                            font-size: 2.5rem;
+                                                            margin-bottom: 40px;
+                                                            color: #6A0572;
+                                                        }
+                                                        
+                                                        .portfolio-grid {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                                                            gap: 20px;
+                                                        }
+                                                        
+                                                        .portfolio-item img {
+                                                            width: 100%;
+                                                            border-radius: 8px;
+                                                            transition: transform 0.3s ease;
+                                                        }
+                                                        
+                                                        .portfolio-item img:hover {
+                                                            transform: scale(1.05);
+                                                        }
+                                                        
+                                                        /* Testimonials Section */
+                                                        .estrat-testimonials {
+                                                            background-color: #f4f4f4;
+                                                            padding: 60px 20px;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .estrat-testimonials h2 {
+                                                            font-size: 2.5rem;
+                                                            margin-bottom: 30px;
+                                                            color: #6A0572;
+                                                        }
+                                                        
+                                                        .testimonials-slider {
+                                                            max-width: 800px;
+                                                            margin: 0 auto;
+                                                        }
+                                                        
+                                                        .testimonials-slider blockquote {
+                                                            font-size: 1.2rem;
+                                                            font-style: italic;
+                                                            color: #555;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        /* Call to Action */
+                                                        .estrat-cta {
+                                                            background: #939292;
+                                                            color: rgb(0, 0, 0);
+                                                            padding: 50px 20px;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .estrat-cta h2 {
+                                                            font-size: 2rem;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        
+                                                        .estrat-cta .cta-button {
+                                                            background-color: #FFBF00;
+                                                            color: white;
+                                                            padding: 15px 30px;
+                                                            font-size: 1.2rem;
+                                                            border-radius: 30px;
+                                                            transition: background-color 0.3s;
+                                                        }
+                                                        
+                                                        .estrat-cta .cta-button:hover {
+                                                            background-color: #E0A800;
+                                                        }
+                                                        /********************************/
+
+
+
+
+/***************************/
+/* Global container */
+.container {
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Petit espace sur les côtés */
+    text-align: center; /* Centrage horizontal du texte */
 }
 
-.estrat-portfolio h2 {
-    font-size: 2.5rem;
+/* Mission Section */
+.kitty-content-mission {
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9); /* Doux dégradé */
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kitty-content-mission h2 {
+    font-size: 3rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.kitty-content-mission p {
+    font-size: 1.8rem; /* Plus grand pour plus de visibilité */
+    color: #444;
+    line-height: 2;
     margin-bottom: 40px;
-    color: #6A0572;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+/* Valeurs Section */
+.kitty-content-valeurs {
+    background: linear-gradient(135deg, #f8e1f4, #fdf1f9); /* Doux dégradé */
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-item img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+.kitty-content-valeurs h2 {
+    font-size: 3rem;
+    color: #d6336c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.portfolio-item img:hover {
-    transform: scale(1.05);
+.kitty-content-valeurs .valeur-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Testimonials Section */
-.estrat-testimonials {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
+.kitty-content-valeurs .valeur-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px; /* Largeur définie pour chaque carte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
-.estrat-testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #6A0572;
+.kitty-content-valeurs .valeur-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.testimonials-slider {
-    max-width: 800px;
+.kitty-content-valeurs .valeur-card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.kitty-content-valeurs .valeur-card h3 {
+    font-size: 1.8rem; /* Texte plus grand */
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+.kitty-content-valeurs .valeur-card p {
+    font-size: 1.2rem; /* Texte légèrement agrandi */
+    color: #555;
+    line-height: 1.6;
+}/******************************/
+
+
+
+ 
+
+
+
+
+/* Section Services */
+.services-section {
+    background-color: #e3e1e1;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille adaptative */
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.testimonials-slider blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #555;
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Zoom léger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 240px;
+    height: 180px;
     margin-bottom: 20px;
 }
 
-/* Call to Action */
-.estrat-cta {
-    background: #6A0572;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+.service-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.estrat-cta h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.service-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify; /* Ajout pour justifier le texte */
 }
 
-.estrat-cta .cta-button {
-    background-color: #FFBF00;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    transition: background-color 0.3s;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 2em;
+    }
+
+    .services-section p {
+        font-size: 1em;
+    }
+
+    .service-item h3 {
+        font-size: 1.2em;
+    }
+
+    .service-item p {
+        font-size: 0.9em;
+    }
 }
 
-.estrat-cta .cta-button:hover {
-    background-color: #E0A800;
-}
-/********************************/
+
+
+
 
 
 
@@ -636,118 +783,3 @@ h1, h2, h3 {
 }
 
 
-
-
-
-
-/* Conteneur général pour chaque section */
-.content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-/* Section de Description de Kitty Content */
-.kitty-content-description {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-}
-
-.kitty-content-description h2 {
-    font-size: 36px;
-    color: #333;
-}
-
-.kitty-content-description p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Captation Photo et Vidéo */
-.image-text-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.image-text-container img, .image-text-container video {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.text {
-    width: 50%;
-    text-align: left;
-}
-
-.text p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Création de contenu illustratif */
-.content-creation {
-    background-color: #eaeaea;
-    padding: 60px 0;
-}
-
-.content-creation h2 {
-    font-size: 36px;
-    color: #333;
-}
-
-.content-creation .image-text-container {
-    display: flex;
-    gap: 20px;
-}
-
-.content-creation img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Mission et Valeurs */
-.mission-values {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-}
-
-.mission-values h2 {
-    font-size: 36px;
-    color: #333;
-}
-
-.mission-values-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.mission, .values {
-    width: 45%;
-}
-
-.mission h3, .values h3 {
-    font-size: 28px;
-    color: #333;
-}
-
-.mission p, .values ul {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.values ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-/************************************************/

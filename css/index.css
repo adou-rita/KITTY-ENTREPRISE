@@ -81,6 +81,26 @@ body {
     display: block;
 }
 
+/* Icône utilisateur */
+.navbar .user-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .user-icon img.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Rond si image carrée */
+    border: 2px solid white;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.navbar .user-icon img.icon:hover {
+    transform: scale(1.1);
+    border-color: #ff7f50;
+}
+
 /* Section avec une image en arrière-plan */
 .background-section {
     background-image: url('../images/bg-img.jpg'); /* Assure-toi que le chemin est correct */

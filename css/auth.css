@@ -6,6 +6,12 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
+/* Importation d'une police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 /* Styles de base pour la barre de menu */
 .navbar {
@@ -55,17 +61,6 @@ body {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .menu li {
-        margin: 10px 0; /* Ajoute un espacement vertical */
-    }
-}
-
-
 /* Menu déroulant */
 .dropdown-content {
     display: none;
@@ -94,11 +89,11 @@ body {
 
 /* Section avec une image en arrière-plan */
 .background-section {
-    background-image: url('../images/bg1.jpg'); /* Assure-toi que le chemin est correct */
+    background-image: url('../images/connexion.jpg'); /* Assure-toi que le chemin est correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +103,7 @@ body {
 }
 
 .background-section .content {
-    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+   
     padding: 20px;
     border-radius: 8px;
 }
@@ -138,61 +133,41 @@ body {
     background-color: #777;
 }
 
-/* Commande Section */
-.commande-container {
-    display: flex; /* Activer le mode flex */
-    flex-wrap: nowrap; /* Empêcher l'empilement */
-    gap: 20px; /* Espacement entre les colonnes */
-    align-items: center; /* Centrer les éléments verticalement */
-    justify-content: space-between; /* Espacement des colonnes */
-    min-height: 400px; /* Ajuste la hauteur totale selon tes besoins */
-}
 
-.commande-image {
-    flex: 1; /* L'image occupe une part égale */
-    max-width: 50%; /* Limiter la largeur à 50% de l'écran */
-    text-align: center; /* Centrer l'image dans son conteneur */
-}
-
-.commande-image img {
-    width: 100%; /* L'image occupe toute la largeur de son conteneur */
-    height: auto; /* Conserver les proportions */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-height: 500px; /* Ajuste la hauteur maximale si nécessaire */
-    object-fit: contain; /* Empêche les déformations */
-
-}
-
-.commande-form-container {
-    flex: 1; /* Le formulaire occupe aussi une part égale */
-    max-width: 50%; /* Limiter la largeur à 50% de l'écran */
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.auth-section {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: auto !important;
+    padding: 20px !important;
+    background-color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
 }
 
 
-.commande-section h1 {
+.auth-container {
     text-align: center;
-    font-size: 24px;
-    color: #333;
+}
+
+h2 {
     margin-bottom: 20px;
+    color: #333;
 }
 
-.commande-form .form-group {
+/* Champs de formulaire */
+.form-group {
     margin-bottom: 15px;
+    text-align: left;
 }
 
-.commande-form label {
+label {
     display: block;
     font-size: 14px;
+    margin-bottom: 5px;
     color: #555;
 }
 
-.commande-form input,
-.commande-form select {
+input {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -201,9 +176,15 @@ body {
     box-sizing: border-box;
 }
 
-.commande-form button {
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Bouton d'action */
+.auth-btn {
     display: block;
-    width: 30%;
+    width: 100%;
     padding: 10px;
     background-color: #333;
     color: white;
@@ -215,16 +196,25 @@ body {
     transition: background-color 0.3s;
 }
 
-.commande-form button:hover {
+.auth-btn:hover {
     background-color: #555;
 }
-@media screen and (max-width: 768px) {
-    .commande-container {
-        flex-wrap: wrap; /* Empile les colonnes */
-    }
-    .commande-image, .commande-form-container {
-        max-width: 100%; /* Chaque colonne occupe toute la largeur */
-    }
+
+/* Texte en bas du formulaire */
+.auth-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-text a:hover {
+    text-decoration: underline;
 }
 
 
@@ -300,10 +290,7 @@ body {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
-    object-fit: cover;
-    border-radius: 50%; /* Ajoute un effet circulaire si nécessaire */
 }
-
 
 .social-icons img:hover {
     transform: scale(1.2); /* Effet zoom */
