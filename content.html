@@ -75,7 +75,7 @@
                         <p>Des vidéos qui racontent une histoire et captivent vos clients.</p>
                     </div>
                     <div class="service-card">
-                        <img src="images/digital.png" alt="Branding Digital">
+                        <img src="images/digital.png" alt="Branding Digital"   >
                         <h3>Branding Digital</h3>
                         <p>Stratégies de contenu adaptées pour accroître votre impact en ligne.</p>
                     </div>
@@ -87,7 +87,7 @@
                 <div class="banner-description2">
                     <div class="image-text-container2">
                         <div class="text">
-                            <h2>Kitty Make Up</h2>
+                            <h2>captation photos</h2>
                             <pre>
                                 <br> Nous offrons aussi des sessions d'apprentissage en cosmétique 
                                 <br> qui vous aideront à mieux comprendre vos instruments et 
@@ -107,7 +107,7 @@
                             Votre navigateur ne supporte pas la balise vidéo.
                         </video>
                         <div class="text">
-                            <h2>Kitty Make Up</h2>
+                            <h2>captation video</h2>
                             <pre>
                                 <br> Nous offrons aussi des sessions d'apprentissage en cosmétique 
                                 <br> qui vous aideront à mieux comprendre vos instruments et 
@@ -137,16 +137,22 @@
         
             <!-- Portfolio Section -->
             <section class="estrat-portfolio">
-                <h2>Notre Portfolio</h2>
+                <h2>Braiding Digital</h2>
+                <p>Faites briller votre marque dans l'univers numérique grâce à des stratégies adaptées et percutantes. Chez Kitty Content,  nous construisons une identité unique pour votre entreprise,</p>
+                <p> en alignant vos valeurs sur des solutions digitales créatives. De la conception graphique au marketing de contenu, nous donnons à votre marque les outils nécessaires pour captiver votre audience et maximiser votre impact en ligne.</h3></p>
+
+<br>
+<br>
+
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <img src="images/project1.jpg" alt="Projet 1">
+                        <img src="images/1.jpg" alt="Projet 1" style=" width: 500px; height: 400px;">
                     </div>
                     <div class="portfolio-item">
-                        <img src="images/project2.jpg" alt="Projet 2">
+                        <img src="images/2.jpg" alt="Projet 2 " style=" width: 500px; height: 400px;">
                     </div>
                     <div class="portfolio-item">
-                        <img src="images/project3.jpg" alt="Projet 3">
+                        <img src="images/3.jpg" alt="Projet 3" style=" width: 500px; height: 400px;">
                     </div>
                 </div>
             </section>
@@ -308,7 +314,22 @@
     </footer>
     
    
+<script>
+    // Ajoute une animation au défilement
+document.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            section.style.opacity = 1;
+            section.style.transition = "opacity 1s ease-in-out";
+        } else {
+            section.style.opacity = 0.5;
+        }
+    });
+});
 
+</script>
 
 
 
