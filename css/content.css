@@ -79,15 +79,17 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}/****/
+}/*************************************************************/
 
-/* Section avec une image en arrière-plan */
+
+ 
+                                                                /* Section avec une image en arrière-plan */
 .background-section {
     background-image: url('../images/Capture\ d’écran\ du\ 2024-11-22\ 12-43-35.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,129 +128,6 @@ body {
 .background-section .btn:hover {
     background-color: #777;
 }/************************/
-
-                                        /* Section générale content */
-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
-
-/* Style général de la bannière */
-.banner-description {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(4, 1, 1, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1800px;
-    overflow: hidden;
-}
-/* Conteneur pour l'image et le texte */
-.image-text-container {
-    display: flex; /* Active le mode Flexbox */
-    align-items: center; /* Centre verticalement l'image et le texte */
-    justify-content: center; /* Centre horizontalement l'image et le texte */
-    gap: 40px; /* Ajoute de l'espace entre l'image et le texte */
-    flex-wrap: wrap; /* Permet l'adaptation en colonnes sur petits écrans */
-}
-
-
-/* Style pour l'image */
-.image-text-container img {
-    margin-right: 200px; /* Ajoute un espace de 40px à droite de l'image */
-    width: 50%; /* Ajuste la largeur de l'image */
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Conteneur du texte */
-.image-text-container .text {
-    width: 50%;
-    color: #333;
-    line-height: 1.6;
-    font-size: 1rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    font-family: "Poppins", sans-serif; /* Police de texte mise à jour */
-}
-
-/* Style du titre */
-.image-text-container .text h2 {
-    font-size: 2rem;
-    color: #d6336c;
-    margin-bottom: 10px;
-}
-
-/* Style des paragraphes */
-.image-text-container .text p {
-    color: #555;
-    font-size: 1rem;
-}
-
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}/******/
-
-
-
-                                  /*captation photo*****************/
-.banner-description2 {
-    width: 100%;
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Couleur de fond douce */
-}
-
-.image-text-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espacement entre l'image et le texte */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.image-text-container2 img {
-    width: 50%; /* L'image occupe 50% de la largeur */
-    height: auto;
-    border-radius: 10px; /* Coins arrondis pour l'image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
-}
-
-.text {
-    width: 50%; /* Le texte occupe également 50% de la largeur */
-    text-align: left;
-}
-
-.text h2 {
-    font-size: 28px;
-    color: #333; /* Couleur du titre */
-    margin-bottom: 20px;
-}
-
-.text pre {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-}
-/***************************************************/
-
-
-
-
-
-
-
-
 
 
 
@@ -346,7 +225,7 @@ body {
 
 
 .carousel-container {
-    max-width: 100%;
+    max-width: 30%;
     overflow: hidden;
     position: relative;
     margin: 0 auto; /* Centre le carrousel */
@@ -395,60 +274,8 @@ body {
 
 
 
-                                                          /* Portfolio Section */
-                                                          .estrat-portfolio {
-                                                            padding: 60px 20px;
-                                                            text-align: center;
-                                                        }
                                                         
-                                                        .estrat-portfolio h2 {
-                                                            font-size: 2.5rem;
-                                                            margin-bottom: 40px;
-                                                            color: #6A0572;
-                                                        }
-                                                        
-                                                        .portfolio-grid {
-                                                            display: grid;
-                                                            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                                                            gap: 20px;
-                                                        }
-                                                        
-                                                        .portfolio-item img {
-                                                            width: 100%;
-                                                            border-radius: 8px;
-                                                            transition: transform 0.3s ease;
-                                                        }
-                                                        
-                                                        .portfolio-item img:hover {
-                                                            transform: scale(1.05);
-                                                        }
-                                                        
-                                                        /* Testimonials Section */
-                                                        .estrat-testimonials {
-                                                            background-color: #f4f4f4;
-                                                            padding: 60px 20px;
-                                                            text-align: center;
-                                                        }
-                                                        
-                                                        .estrat-testimonials h2 {
-                                                            font-size: 2.5rem;
-                                                            margin-bottom: 30px;
-                                                            color: #6A0572;
-                                                        }
-                                                        
-                                                        .testimonials-slider {
-                                                            max-width: 800px;
-                                                            margin: 0 auto;
-                                                        }
-                                                        
-                                                        .testimonials-slider blockquote {
-                                                            font-size: 1.2rem;
-                                                            font-style: italic;
-                                                            color: #555;
-                                                            margin-bottom: 20px;
-                                                        }
-                                                        
-                                                        /* Call to Action */
+                                                        /* Call to Action video */
                                                         .estrat-cta {
                                                             background: #939292;
                                                             color: rgb(0, 0, 0);
@@ -489,8 +316,8 @@ body {
 
 /* Mission Section */
 .kitty-content-mission {
-    background: linear-gradient(135deg, #e0f7fa, #f1f8e9); /* Doux dégradé */
-    padding: 100px 20px;
+    background: linear-gradient(135deg, #3b3b3b, #f1f8e9); /* Doux dégradé */
+    padding: 100px 10px;
     text-align: center;
     border-radius: 15px;
     margin: 40px auto;
@@ -499,7 +326,7 @@ body {
 
 .kitty-content-mission h2 {
     font-size: 3rem;
-    color: #00796b;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -515,7 +342,7 @@ body {
 
 /* Valeurs Section */
 .kitty-content-valeurs {
-    background: linear-gradient(135deg, #f8e1f4, #fdf1f9); /* Doux dégradé */
+    background: linear-gradient(135deg, #fbfbfb, #fad6ee); /* Doux dégradé */
     padding: 100px 20px;
     text-align: center;
     border-radius: 15px;
@@ -525,7 +352,7 @@ body {
 
 .kitty-content-valeurs h2 {
     font-size: 3rem;
-    color: #d6336c;
+    color: #000000;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -580,83 +407,232 @@ body {
  
 
 
-
-
-/* Section Services */
+/* SECTION SERVICES */
 .services-section {
-    background-color: #e3e1e1;
-    padding: 30px 20px;
+    /* Dégradé moderne pour l'arrière-plan */
+    background: linear-gradient(135deg, #f3f4f6, #e3e1e1);
+    padding: 60px 20px; /* Espacement intérieur pour aérer la section */
     text-align: center;
 }
 
+/* Titre principal */
 .services-section h2 {
     font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.services-section p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 40px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille adaptative */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.service-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-item:hover {
-    transform: scale(1.05); /* Zoom léger */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.service-item img {
-    width: 240px;
-    height: 180px;
+    color: #333; /* Texte sombre pour le contraste */
     margin-bottom: 20px;
 }
 
+/* Description sous le titre */
+.services-section p {
+    font-size: 1.2em;
+    color: #666; /* Texte gris pour un style épuré */
+    margin-bottom: 40px;
+}
+
+/* GRID SERVICES */
+.services-grid {
+    /* Grille adaptative : les colonnes s'ajustent à la taille de l'écran */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espace entre les items */
+    max-width: 2000px; /* Largeur maximale de la grille */
+    margin: 0 auto; /* Centrer la grille */
+}
+
+/* STYLE DES ITEMS */
+.service-item {
+    background-color: #fff; /* Fond blanc épuré */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis pour un style moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce */
+}
+
+/* Effet au survol des items */
+.service-item:hover {
+    transform: scale(1.05); /* Zoom léger */
+    box-shadow: 0 6px 12px rgba(173, 171, 171, 0.2); /* Ombre renforcée */
+}
+
+
+/* Conteneur principal de l'image */
+.service-image-container {
+    position: relative;
+    width: 100%; /* Ajustement pour occuper tout l'espace de l'élément parent */
+    height: 350px; /* Augmentez la hauteur pour agrandir les images */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Image */
+.service-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* S'adapte au conteneur en gardant les proportions */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Superposition sur l'image */
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+/* Bouton "Nous Contacter" */
+.contact-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6b6b; /* Couleur du bouton */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Bouton au survol */
+.contact-button:hover {
+    background-color: #e63946; /* Couleur au survol */
+    transform: scale(1.1); /* Zoom léger */
+}
+
+/* Animation au survol de l'image */
+.service-image-container:hover .service-overlay {
+    opacity: 1; /* Superposition visible */
+}
+
+.service-image-container:hover img {
+    transform: scale(1.05); /* Zoom de l'image au survol */
+}
+
+
+/* SUPERPOSITION SUR L'IMAGE */
+.service-overlay {
+    position: absolute; /* Positionnement relatif à l'image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre avec transparence */
+    color: #fff; /* Texte blanc pour le contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisible par défaut */
+    transition: opacity 0.3s ease; /* Apparition douce */
+    border-radius: 12px; /* Coins arrondis pour suivre l'image */
+}
+
+/* Afficher la superposition au survol */
+.service-image-container:hover .service-overlay {
+    opacity: 1; /* Apparition de la superposition */
+}
+
+/* TITRE DES SERVICES */
 .service-item h3 {
     font-size: 1.5em;
-    color: #333;
+    color: #333; /* Texte sombre pour une bonne lisibilité */
     margin-bottom: 10px;
 }
 
+/* DESCRIPTION DES SERVICES */
 .service-item p {
     font-size: 1em;
-    color: #666;
-    line-height: 1.5;
-    text-align: justify; /* Ajout pour justifier le texte */
+    color: #666; /* Texte gris pour un style moderne */
+    line-height: 1.5; /* Amélioration de la lisibilité */
+    text-align: justify; /* Texte justifié */
 }
 
-/* Responsive Design */
+/* BOUTON "EN SAVOIR PLUS" */
+.learn-more-btn {
+    display: inline-block; /* Transformer le lien en bouton */
+    margin-top: 15px;
+    padding: 10px 20px; /* Espacement interne */
+    background-color: #ff6347; /* Couleur vive pour attirer l'attention */
+    color: #fff; /* Texte blanc pour le contraste */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprimer le soulignement */
+    transition: background-color 0.3s ease; /* Animation douce */
+}
+
+/* Effet au survol du bouton */
+.learn-more-btn:hover {
+    background-color: #e5533d; /* Couleur légèrement plus sombre */
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Départ légèrement en bas */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Fin à sa position normale */
+    }
+}
+
+/* Appliquer l'animation aux items */
+.service-item {
+    opacity: 0; /* Invisible initialement */
+    animation: fadeIn 0.6s ease-out forwards; /* Animation douce */
+}
+
+/* Délai d'apparition progressif pour chaque item */
+.service-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.service-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.service-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.service-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* DESIGN RESPONSIVE */
 @media (max-width: 768px) {
     .services-section h2 {
-        font-size: 2em;
+        font-size: 2em; /* Réduire la taille du titre */
     }
 
     .services-section p {
-        font-size: 1em;
+        font-size: 1em; /* Réduire la taille du texte */
     }
 
     .service-item h3 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Ajuster la taille des titres */
     }
 
     .service-item p {
-        font-size: 0.9em;
+        font-size: 0.9em; /* Réduire la taille des descriptions */
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+
+    .service-item {
+        padding: 15px; /* Réduire l'espacement interne */
     }
 }
 
@@ -783,3 +759,260 @@ body {
 }
 
 
+
+
+
+
+/* Section À propos */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1; /* Laisse le texte occuper une portion égale à l'image */
+    text-align: left;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background-color: #777;
+}
+
+.about-image {
+    flex: 1; /* Laisse l'image occuper une portion égale au texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gestion des petits écrans */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Passe en colonne sur petit écran */
+    }
+
+    .about-text, .about-image {
+        flex: 1 1 100%; /* Chaque élément occupe la largeur complète */
+        text-align: center; /* Centre le texte sur petit écran */
+    }
+}
+
+/* Section Services */
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille adaptative */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Zoom léger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 2em;
+    }
+
+    .services-section p {
+        font-size: 1em;
+    }
+
+    .service-item h3 {
+        font-size: 1.2em;
+    }
+
+    .service-item p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f36;
+}
+
+a {
+    color: #f36;
+    text-decoration: none;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.intro-content {
+    max-width: 50%;
+}
+
+.intro-content h2 {
+    font-size: 28px;
+}
+
+.intro-image img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.retail-section {
+    background-color: #f7fbff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
