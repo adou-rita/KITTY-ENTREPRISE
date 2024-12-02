@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Kitty Content</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Création de contenu pour entrepreneurs</h2>
+        <p>Captation photo et vidéo, et Branding Digital pour les entrepreneurs.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service">
+            <h3>Captation Photo</h3>
+            <img src="photo-service.jpg" alt="Captation Photo">
+            <p>Des photos professionnelles pour mettre en valeur votre entreprise.</p>
+        </div>
+        <div class="service">
+            <h3>Captation Vidéo</h3>
+            <video controls>
+                <source src="video-service.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <p>Des vidéos de haute qualité pour raconter votre histoire.</p>
+        </div>
+        <div class="service">
+            <h3>Branding Digital</h3>
+            <img src="branding-service.jpg" alt="Branding Digital">
+            <p>Création d'une identité de marque forte et cohérente.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Kitty Content est dédié à aider les entrepreneurs à créer du contenu de haute qualité pour promouvoir leur entreprise.</p>
+    </section>
+
+    <section id="carousel">
+        <h2>Galerie</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/1.jpg" alt="Slide 1">
+                <img src="images/2.jpg" alt="Slide 2">
+                <img src="images/3.jpg" alt="Slide 3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour plus d'informations, envoyez-nous un email à <a href="mailto:contact@kittycontent.com">contact@kittycontent.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kitty Content. Tous droits réservés.</p>
+    </footer>
+
+
+
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#services, #about, #contact {
+    padding: 20px;
+    text-align: center;
+}
+
+#services .service {
+    margin: 20px 0;
+}
+
+#services img, #services video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px 0;
+}
+
+#carousel {
+    padding: 20px;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+    </style>
+    <script>
+        let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slides img');
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
+    });
+}
+
+function moveSlide(n) {
+    const slides = document.querySelectorAll('.slides img');
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlides();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlides();
+});
+
+    </script>
+</body>
+</html>

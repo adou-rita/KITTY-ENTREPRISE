@@ -407,236 +407,6 @@ body {
  
 
 
-/* SECTION SERVICES */
-.services-section {
-    /* Dégradé moderne pour l'arrière-plan */
-    background: linear-gradient(135deg, #f3f4f6, #e3e1e1);
-    padding: 60px 20px; /* Espacement intérieur pour aérer la section */
-    text-align: center;
-}
-
-/* Titre principal */
-.services-section h2 {
-    font-size: 2.5em;
-    color: #333; /* Texte sombre pour le contraste */
-    margin-bottom: 20px;
-}
-
-/* Description sous le titre */
-.services-section p {
-    font-size: 1.2em;
-    color: #666; /* Texte gris pour un style épuré */
-    margin-bottom: 40px;
-}
-
-/* GRID SERVICES */
-.services-grid {
-    /* Grille adaptative : les colonnes s'ajustent à la taille de l'écran */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Espace entre les items */
-    max-width: 2000px; /* Largeur maximale de la grille */
-    margin: 0 auto; /* Centrer la grille */
-}
-
-/* STYLE DES ITEMS */
-.service-item {
-    background-color: #fff; /* Fond blanc épuré */
-    padding: 20px; /* Espacement interne */
-    border-radius: 8px; /* Coins arrondis pour un style moderne */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce */
-}
-
-/* Effet au survol des items */
-.service-item:hover {
-    transform: scale(1.05); /* Zoom léger */
-    box-shadow: 0 6px 12px rgba(173, 171, 171, 0.2); /* Ombre renforcée */
-}
-
-
-/* Conteneur principal de l'image */
-.service-image-container {
-    position: relative;
-    width: 100%; /* Ajustement pour occuper tout l'espace de l'élément parent */
-    height: 350px; /* Augmentez la hauteur pour agrandir les images */
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-/* Image */
-.service-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* S'adapte au conteneur en gardant les proportions */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Superposition sur l'image */
-.service-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    color: #fff;
-    text-align: center;
-    border-radius: 12px;
-}
-
-
-/* Bouton "Nous Contacter" */
-.contact-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff6b6b; /* Couleur du bouton */
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* Bouton au survol */
-.contact-button:hover {
-    background-color: #e63946; /* Couleur au survol */
-    transform: scale(1.1); /* Zoom léger */
-}
-
-/* Animation au survol de l'image */
-.service-image-container:hover .service-overlay {
-    opacity: 1; /* Superposition visible */
-}
-
-.service-image-container:hover img {
-    transform: scale(1.05); /* Zoom de l'image au survol */
-}
-
-
-/* SUPERPOSITION SUR L'IMAGE */
-.service-overlay {
-    position: absolute; /* Positionnement relatif à l'image */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Fond sombre avec transparence */
-    color: #fff; /* Texte blanc pour le contraste */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* Invisible par défaut */
-    transition: opacity 0.3s ease; /* Apparition douce */
-    border-radius: 12px; /* Coins arrondis pour suivre l'image */
-}
-
-/* Afficher la superposition au survol */
-.service-image-container:hover .service-overlay {
-    opacity: 1; /* Apparition de la superposition */
-}
-
-/* TITRE DES SERVICES */
-.service-item h3 {
-    font-size: 1.5em;
-    color: #333; /* Texte sombre pour une bonne lisibilité */
-    margin-bottom: 10px;
-}
-
-/* DESCRIPTION DES SERVICES */
-.service-item p {
-    font-size: 1em;
-    color: #666; /* Texte gris pour un style moderne */
-    line-height: 1.5; /* Amélioration de la lisibilité */
-    text-align: justify; /* Texte justifié */
-}
-
-/* BOUTON "EN SAVOIR PLUS" */
-.learn-more-btn {
-    display: inline-block; /* Transformer le lien en bouton */
-    margin-top: 15px;
-    padding: 10px 20px; /* Espacement interne */
-    background-color: #ff6347; /* Couleur vive pour attirer l'attention */
-    color: #fff; /* Texte blanc pour le contraste */
-    border-radius: 5px; /* Coins arrondis */
-    text-decoration: none; /* Supprimer le soulignement */
-    transition: background-color 0.3s ease; /* Animation douce */
-}
-
-/* Effet au survol du bouton */
-.learn-more-btn:hover {
-    background-color: #e5533d; /* Couleur légèrement plus sombre */
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Départ légèrement en bas */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Fin à sa position normale */
-    }
-}
-
-/* Appliquer l'animation aux items */
-.service-item {
-    opacity: 0; /* Invisible initialement */
-    animation: fadeIn 0.6s ease-out forwards; /* Animation douce */
-}
-
-/* Délai d'apparition progressif pour chaque item */
-.service-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-.service-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-.service-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-.service-item:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* DESIGN RESPONSIVE */
-@media (max-width: 768px) {
-    .services-section h2 {
-        font-size: 2em; /* Réduire la taille du titre */
-    }
-
-    .services-section p {
-        font-size: 1em; /* Réduire la taille du texte */
-    }
-
-    .service-item h3 {
-        font-size: 1.2em; /* Ajuster la taille des titres */
-    }
-
-    .service-item p {
-        font-size: 0.9em; /* Réduire la taille des descriptions */
-    }
-}
-
-@media (max-width: 576px) {
-    .services-grid {
-        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
-    }
-
-    .service-item {
-        padding: 15px; /* Réduire l'espacement interne */
-    }
-}
-
-
 
 
 
@@ -762,8 +532,7 @@ body {
 
 
 
-
-/* Section À propos */
+/* Section captation photo  */
 .about-section {
     background-color: #f9f9f9;
     padding: 60px 20px;
@@ -837,6 +606,8 @@ body {
         text-align: center; /* Centre le texte sur petit écran */
     }
 }
+
+
 
 /* Section Services */
 .services-section {
@@ -992,7 +763,9 @@ a {
     padding: 50px 20px;
 }
 
-.products-section {
+
+
+.products-section {/******sextion des produit **/
     padding: 40px 20px;
     text-align: center;
 }
@@ -1005,7 +778,7 @@ a {
 }
 
 .product-item {
-    border: 1px solid #ddd;
+    
     padding: 20px;
     border-radius: 8px;
     max-width: 250px;
@@ -1013,6 +786,7 @@ a {
 }
 
 .product-item img {
-    max-width: 100%;
+    max-width: 200%;
+    height: 100%;
     border-radius: 8px;
 }
