@@ -316,7 +316,7 @@ body {
 
 /* Mission Section */
 .kitty-content-mission {
-    background: linear-gradient(135deg, #3b3b3b, #f1f8e9); /* Doux dégradé */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Doux dégradé */
     padding: 100px 10px;
     text-align: center;
     border-radius: 15px;
@@ -326,7 +326,7 @@ body {
 
 .kitty-content-mission h2 {
     font-size: 3rem;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -342,7 +342,7 @@ body {
 
 /* Valeurs Section */
 .kitty-content-valeurs {
-    background: linear-gradient(135deg, #fbfbfb, #fad6ee); /* Doux dégradé */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Doux dégradé */
     padding: 100px 20px;
     text-align: center;
     border-radius: 15px;
@@ -416,7 +416,7 @@ body {
 .site-footer {
     background-color: #0f0101; /* Couleur de fond sombre */
     color: white;
-    padding: 40px 20px;
+    padding: 100px 20px;
     border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
 }
 
