@@ -24,7 +24,7 @@ body {
 }
 
 .logo img {
-    height: 80px; /* Ajuste la taille du logo */
+    height: 100px; /* Ajuste la taille du logo */
     width: 100px;
     margin-right: 10px;
 }
@@ -83,7 +83,7 @@ body {
 
 /* Section avec une image en arrière-plan */
 .background-section {
-    background-image: url('../images/apropos.jpg'); /* Assure-toi que le chemin est correct */
+    background-image: url('../images/resi2.jpeg');   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ body {
     margin-top: 15px;
     padding: 10px 20px;
     color: white;
-    background-color: #555;
+    background-color: #d65b097a;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -127,8 +127,163 @@ body {
     background-color: #777;
 }
 
+/* Section générale make up */
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style général de la bannière */
+.banner-description {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(4, 1, 1, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1800px;
+    overflow: hidden;
+}
+/* Conteneur pour l'image et le texte */
+.image-text-container {
+    display: flex; /* Active le mode Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    justify-content: center; /* Centre horizontalement l'image et le texte */
+    gap: 40px; /* Ajoute de l'espace entre l'image et le texte */
+    flex-wrap: wrap; /* Permet l'adaptation en colonnes sur petits écrans */
+}
 
 
+/* Style pour l'image */
+.image-text-container img {
+    margin-right: 200px; /* Ajoute un espace de 40px à droite de l'image */
+    width: 50%; /* Ajuste la largeur de l'image */
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur du texte */
+.image-text-container .text {
+    width: 50%;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif; /* Police de texte mise à jour */
+}
+
+/* Style du titre */
+.image-text-container .text h2 {
+    font-size: 2rem;
+    color: #75350ab0;
+    margin-bottom: 10px;
+}
+
+/* Style des paragraphes */
+.image-text-container .text p {
+    color: #555;
+    font-size: 1rem;
+}
+
+
+
+                        /* Section principale */
+                        .kitty-makeup-mission {
+                            background: linear-gradient(135deg, #e78473, #e2c0b2);
+                            padding: 60px 20px;
+                            text-align: center;
+                            border-radius: 15px;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                            margin: 40px auto;
+                            max-width: 1800px;
+                        }
+                        
+                        /* Titre principal */
+                        .kitty-makeup-mission h2 {
+                            font-size: 2.5rem;
+                            color: #75350ab0; /* Rose vif */
+                            margin-bottom: 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+                        
+                        /* Texte de description */
+                        .kitty-makeup-mission p {
+                            font-size: 1.2rem;
+                            color: #555;
+                            line-height: 1.8;
+                            margin-bottom: 40px;
+                        }
+                        
+                        /* Valeurs et disposition */
+                        .valeur-details {
+                            display: flex;
+                            justify-content: center;
+                            gap: 30px;
+                            flex-wrap: wrap;
+                        }
+                        
+                        /* Cartes de valeur */
+                        .valeur-card {
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                            padding: 20px;
+                            width: 500px;
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            text-align: center;
+                        }
+                        
+                        .valeur-card:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+                        }
+                        
+                        /* Images dans les cartes */
+                        .valeur-card img {
+                            border-radius: 10px;
+                            margin-bottom: 15px;
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                        
+                        /* Titres des cartes */
+                        .valeur-card h3 {
+                            font-size: 1.5rem;
+                            color: #75350ab0;
+                            margin-bottom: 10px;
+                        }
+                        
+                        /* Texte des cartes */
+                        .valeur-card p {
+                            font-size: 1rem;
+                            color: #555;
+                            line-height: 1.6;
+                        }
+                        
+                        /* Style des emojis */
+                        .kitty-makeup-mission h2, 
+                        .kitty-makeup-mission p, 
+                        .valeur-card h3, 
+                        .valeur-card p {
+                            line-height: 1.8;
+                        }
+                        
+                        .kitty-makeup-mission h2 span,
+                        .valeur-card h3 span {
+                            font-size: 1.2rem;
+                        }
+                        
+                        /****************************************/
 
 
 /* Sections du footer */
@@ -245,4 +400,44 @@ body {
     border-top: 1px solid #555;
     padding-top: 10px;
     text-align: center;
+}
+
+
+.btn-prendre-rdv {
+    display: inline-block;
+    padding: 8px 15px; /* Réduit l'espacement interne */
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px; /* Taille de texte réduite */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto; /* Ajuste automatiquement à la taille du texte */
+    text-align: center; /* Centre le texte */
+}
+
+.btn-prendre-rdv:hover {
+    background-color: #ff4c4c;
+    text-decoration: none;
+}
+
+.btn-learn-more {
+    padding: 8px 15px; /* Réduit l'espacement interne */
+    background-color: #ff6b6b; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Retire la bordure par défaut */
+    border-radius: 5px; /* Arrondit les coins */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+    width: 120px; /* Largeur fixe */
+    text-align: center; /* Centre le texte */
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet moderne */
+}
+
+.btn-learn-more:hover {
+    background-color: #ff4c4c; /* Couleur au survol */
 }
