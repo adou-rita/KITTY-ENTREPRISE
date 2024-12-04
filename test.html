@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Kitty Entreprises : services de maquillage, location de résidences meublées, création de contenu, et accessoires pratiques.">
+    <title>A Propos</title>
+    <link rel="stylesheet" href="./css/apropos.css">
+</head>
+<body>
+      <!-- Barre de menu avec logo et menu déroulant -->
+      <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images/kitty_logo.png" alt="Logo" />
+               <!-- <span>Mes Petits Trucs Utiles</span> -->
+            </div>
+
+            <!-- Menu principal -->
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                
+                <li><a href="apropos.html">À propos</a></li>
+                
+                <!-- Menu déroulant pour service-->
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Nos Services</a>
+                    <div class="dropdown-content">
+                        <a href="makeup.html">Kitty MakeUp</a>
+                        <a href="content.html">Kitty Content</a>
+                        <a href="resi_heaven.html">Résidences Heaven</a>
+                        <a href="boutique.html">Mes Petits Trucs Utiles</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Section avec une image en arrière-plan -->
+     <section class="background-section">
+        <div class="content">
+            <h1> A Propos de Kitty Entreprise</h1>
+            <p>
+             Kitty Entreprises, votre partenaire pour sublimer et simplifier votre quotidien. 
+               <br> Depuis 2020, nous offrons des services haut de gamme, alliant expertise et passion
+    .
+            </p>
+        </div>
+    </section>
+
+  
+
+    <!-- Section Nos Services -->
+    <section id="services" class="nos-services">
+        <h1>Nos Services :</h1>
+        <p>Kitty Entreprises est divisée en quatre branches principales, chacune spécialisée dans un domaine spécifique pour offrir des services personnalisés et de qualité.</p>
+    </section>
+    
+
+    <!-- Services principaux -->
+    <section> 
+        <div class="service-container">
+            <!-- Kitty Make-Up -->
+            <div class="service flex-row">
+                <img src="./images/banner-img.png" alt="Kitty Make-Up & Skincare">
+                <div>
+                    <h3>Kitty Make-Up & Skincare</h3>
+                    <p>Spécialisés en beauté à domicile, nous offrons maquillage, conseils skincare personnalisés et formations professionnelles pour sublimer votre beauté naturelle.</p>
+                    <button onclick="window.location.href='makeup.html'">En savoir plus</button>
+                </div>
+            </div> 
+     </section> 
+
+            <!-- Résidences Heaven -->
+        <section><div class="service flex-row">
+                <div>
+                    <h3>Les Résidences Heaven</h3>
+                    <p>Offrez-vous un séjour de luxe dans nos résidences meublées haut de gamme. Pour court ou long terme, profitez de confort et d'élégance.</p>
+                    <button onclick="window.location.href='resi_heaven.html'">En savoir plus</button>
+                </div>
+                <img src="./images/resi.jpg" alt="Les Résidences Heaven">
+            </div>
+        </div>
+        </section> 
+        
+        <!-- Kitty Confort et Mes Petits Trucs Utiles côte à côte -->
+        <section>
+            <div class="service-cool">
+                <!-- Kitty Content -->
+                <div class="service">
+                    <img src="./images/lait.jpg" alt="Kitty Content">
+                    <h3>Kitty Content</h3>
+                    <p>Création de contenu photo et vidéo pour booster votre visibilité de manière créative et professionnelle.</p>
+                    <button onclick="window.location.href='content.html'">En savoir plus</button>
+                </div>
+        
+                <!-- Mes Petits Trucs Utiles -->
+                <div class="service-vdr" >
+                    <img src="./images/fame.jpg" alt="Mes Petits Trucs Utiles">
+                    <h3>Mes Petits Trucs Utiles</h3>
+                    <p>Découvrez des accessoires pratiques pour simplifier votre quotidien.</p>
+                    <button onclick="window.location.href='boutique.html'">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+        
+    
+
+    <!-- Engagement -->
+<section class="commitment-section">
+    <div class="commitment-container">
+        <div class="icon-container">
+            <img src="./images/eng.png" alt="Icône Engagement" class="commitment-icon">
+        </div>
+        <h2>Notre Engagement</h2>
+        <p class="commitment-text">
+            Chez <strong>Kitty Entreprises</strong>, nous nous engageons à offrir des <strong>services de qualité</strong>, centrés sur la satisfaction de nos clients. 
+            <br>Notre équipe dévouée veille à fournir une expérience unique et adaptée à vos besoins.
+        </p>
+        <div class="commitment-divider"></div>
+        <p class="commitment-quote">"Votre satisfaction, notre priorité."</p>
+    </div>
+</section>
+
+
+    <!-- Inscription -->
+    <section class="subscribe-section">
+        <h2>Rejoignez-nous</h2>
+        <p>Abonnez-vous pour recevoir les dernières mises à jour et offres exclusives.</p>
+        <form>
+            <input type="email" placeholder="Entrez votre email" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+        </section>
+    
+    <script> // Fichier script.js
+        document.querySelector('.subscribe-section form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert("Merci de vous être inscrit !");
+        });
+        </script>
+        
+        
+</body>
+</html>
+
+
+<!-- <section class="about-section">
+    <div class="content-container">
+        <div class="text-content">
+            <h3>QUI SOMMES-NOUS ? EXPLIQUONS-NOUS.</h3>
+            <h1>La nature nous inspire à être toujours uniques.</h1>
+            <p>
+                Duis dui dui, rutrum vitae fermentum nec, tempus ut nisi. 
+                Aliquam vestibulum congue quis. Suspendisse dapibus erat urna. 
+                Fusce aliquam ipsum eget mi scelerisque, in ultricies ex varius nec lectus. 
+                Cras gravida suspendisse.
+            </p>
+            <a href="#" class="btn">EN SAVOIR PLUS</a>
+        </div>
+        <div class="images-container">
+            <img src="image1.jpg" alt="Modèle 1">
+            <img src="image2.jpg" alt="Modèle 2">
+        </div>
+    </div>
+</section> -->
+
+
+    
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Kitty Entreprise</h3>
+            <p>Mes petits trucs utiles est une Boutique de vente en ligne de gadgets et d’accessoires pour faciliter le quotidien.</p>
+            <img src="images/kitty_logo.png" alt="Logo" class="footer-logo-img">
+        </div>
+         <!-- Section adresse, téléphone, email -->
+          <div class="footer-contact">
+            <h3>Contactez-nous</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/adress.png" alt="Adresse">
+                        <p>Abidjan, Cocody</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/tel.png" alt="Téléphone">
+                        <p>+225 0747172822</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="Email">
+                        <p>linenelly.beugre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="makeup.html">Kitty Make Up</a></li>
+                <li><a href="content.html">Kitty Content</a></li>
+                <li><a href="resi_heaven.html">Résidences Heaven</a></li>
+                <li><a href="boutique.html">Mes Petits Trucs Utiles</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MesPetitsTrucsUtiles?mibextid=kFxxJD"><img src="images/icon-fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mes_petitstrucsutiles?igsh=MXF0bnpodGlkaGNqcw%3D%3D&utm_source=qr"><img src="images/icon-insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Kitty Entreprise. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+<style>
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #afadad;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #afadad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #afadad;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images/apropos.jpg'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.background-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.background-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.background-section .btn:hover {
+    background-color: #777;
+}
+
+/* Section À Propos */
+.about-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* section Nos service */
+.nos-services {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    padding: 50px 20px; /* Espacement interne pour aérer */
+    text-align: center; /* Centrer le texte */
+}
+
+.nos-services  h1 {
+    font-size: 2.5rem; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    font-weight: bold;
+}
+
+.nos-services  p {
+    font-size: 1.2rem; /* Taille du texte */
+    line-height: 1.6; /* Hauteur des lignes pour améliorer la lisibilité */
+    max-width: 800px; /* Limite la largeur pour un meilleur rendu */
+    margin: 0 auto; /* Centre le texte horizontalement */
+}
+
+.nos-services  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Conteneur global */
+.service-container {
+    width: 100%;           /* Le conteneur occupe toute la largeur de la page */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style des services */
+.service {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Disposition horizontale (texte à gauche, image à droite) */
+    width: 100%;           /* Occupe toute la largeur disponible */
+    text-align: left;      /* Alignement du texte à gauche */
+    padding: 15px;
+}
+
+/* Image du service */
+.service img {
+    width: 40%;            /* L'image occupe 40% de la largeur de la boîte */
+    height: auto;          /* Laisse l'image ajuster sa hauteur automatiquement */
+    object-fit: cover;     /* Assure que l'image couvre l'espace sans déformation */
+    border-radius: 8px;
+    margin-left: 20px;     /* Un peu d'espace entre le texte et l'image */
+}
+
+/* Texte du service */
+.service div {
+    flex: 1;               /* Le texte occupe le reste de l'espace disponible */
+    padding-right: 20px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.service button:hover {
+    background-color: #004494;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .service-container {
+        padding: 10px;
+    }
+
+    .service img {
+        width: 100%; /* L'image occupe toute la largeur disponible sur petits écrans */
+        height: auto; /* Ajuste la hauteur de l'image */
+        margin-left: 0; /* Enlève l'espace entre le texte et l'image sur petits écrans */
+    }
+
+    .service {
+        flex-direction: column; /* L'image et le texte seront empilés verticalement sur petits écrans */
+    }
+}
+
+.service-cool {
+    display: flex; /* Utilisation de Flexbox pour aligner les services côte à côte */
+    justify-content: space-between; /* Espace égal entre les deux services */
+    gap: 20px; /* Espace entre les services */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+service-vdr {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 48%; /* Chaque service occupe environ 48% de la largeur de la page */
+    display: flex;
+    flex-direction: column; /* L'image et le texte sont empilés verticalement */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.service-vdr img {
+    width: 100%; /* L'image occupe toute la largeur de la boîte */
+    height: auto; /* Ajuste la hauteur de l'image proportionnellement */
+    object-fit: cover; /* Assure que l'image couvre la boîte sans déformation */
+    border-radius: 8px;
+}
+
+.service-vdr h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin: 10px 0;
+}
+.service-vdr p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+.service-vdr button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+.service-vdr button:hover {
+    background-color: #004494;
+}
+/* Responsiveness pour les petits écrans */
+@media (max-width: 768px) {
+    .service-cool {
+        flex-direction: column; /* Les services sont empilés verticalement sur les petits écrans */
+        gap: 10px; /* Réduit l'espace entre les services */
+    }
+
+    .service, .service-vdr {
+        width: 100%; /* Les services occupent toute la largeur de la page sur petits écrans */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.commitment-section {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    top: 30px
+}
+
+.commitment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+
+.icon-container {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 100%;
+    margin-bottom: 50px;
+}
+
+.commitment-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.commitment-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.commitment-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.commitment-divider {
+    width: 60px;
+    height: 4px;
+    background-color: #000000;
+    margin: 20px auto;
+}
+
+.commitment-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #1b1b1b;
+    margin-top: 10px;
+}
+
+/* Section Inscription */
+.subscribe-section {
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    color: white;
+}
+
+.subscribe-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-section input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscribe-section button {
+    background-color: #555;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-section button:hover {
+    background-color:#000000;
+}
+
+
+/* Sections du footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/*  */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 60px; /* Taille du logo */
+    height: 60px; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}
+
+</style>
+>>>>>>> ceea10c (..)
+</body>
+</html>
+
+
+

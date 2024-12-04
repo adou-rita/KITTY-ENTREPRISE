@@ -248,10 +248,13 @@ body {
 
 /* Alignement des boutons */
 .service-item {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Équilibre le contenu verticalement */
     align-items: center;
+=======
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -261,11 +264,17 @@ body {
 
 /* Uniformisation des images */
 .service-item img {
+<<<<<<< HEAD
     width: 100%; /* Ajuste la largeur à 100% de l'espace disponible */
     height: 400px; /* Fixe une hauteur pour toutes les images */
     object-fit: cover; /* Maintient les proportions de l'image */
     border-radius: 8px;
     margin-bottom: 55px;
+=======
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
 }
 
 
@@ -283,18 +292,29 @@ body {
 
 .service-item .btn {
     display: inline-block;
+<<<<<<< HEAD
     background: #555;
+=======
+    background: #0056b3;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
+<<<<<<< HEAD
     margin-top: auto; /* Place le bouton en bas du contenu */
 }
 
 
 .service-item .btn:hover {
     background: #c2c2c2;
+=======
+}
+
+.service-item .btn:hover {
+    background: #004299;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
 }
 
 
@@ -405,12 +425,21 @@ body {
     margin-top: 10px;
     padding: 10px 15px;
     color: #fff;
+<<<<<<< HEAD
     background-color:#555;
+=======
+    background-color: #363636;
+    border-radius: 5px;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
     text-decoration: none;
 }
 
 .btn:hover {
+<<<<<<< HEAD
     background-color: #555;
+=======
+    background-color: #2c2c2c;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
 }
 
 .shop-btn {
@@ -418,13 +447,21 @@ body {
     display: inline-block;
     padding: 15px 20px;
     color: #fff;
+<<<<<<< HEAD
     background-color: #555;
+=======
+    background-color: #242323;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
     border-radius: 5px;
     text-decoration: none;
 }
 
 .shop-btn:hover {
+<<<<<<< HEAD
     background-color:  #242323;
+=======
+    background-color: #292828;
+>>>>>>> 7bcf8f9823a85169966d472e8d4be1f223ab92d7
 }
 /* Section Inscription */
 .subscribe-section {
