@@ -11,33 +11,32 @@ import (
 
 var DB *sql.DB
 
-func InitDatabase() error {
-	// Créer le dossier data s'il n'existe pas
+func InitSQLiteDatabase() error {
 	dataDir := "./data"
 	if err := os.MkdirAll(dataDir, os.ModePerm); err != nil {
 		return err
 	}
 
-	// Chemin complet de la base de données
 	dbPath := filepath.Join(dataDir, "kitty_entreprises.db")
-
-	// Ouvrir ou créer la base de données
 	var err error
 	DB, err = sql.Open("sqlite3", dbPath)
 	if err != nil {
 		return err
 	}
 
-	// Création des tables
+	if err := DB.Ping(); err != nil {
+		return err
+	}
+
 	if err := createTables(); err != nil {
 		return err
 	}
 
+	log.Println("Base de données SQLite connectée avec succès")
 	return nil
 }
 
 func createTables() error {
-	// Exemple de création de table produits
 	_, err := DB.Exec(`
 		CREATE TABLE IF NOT EXISTS products (
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -56,7 +55,7 @@ func createTables() error {
 	return nil
 }
 
-func CloseDatabase() {
+func CloseSQLiteDatabase() {
 	if DB != nil {
 		DB.Close()
 	}
