@@ -1,0 +1,363 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles de base pour la barre de menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px; /* Ajuste la taille du logo */
+    margin-right: 10px;
+}
+
+/* Menu principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #afadad;
+    border-radius: 4px;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #afadad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #afadad;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section avec une image en arrière-plan */
+.background-section {
+    background-image: url('../images/bg-b.png'); /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Fond transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.background-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.background-section .btn_1 {
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.background-section a {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+.background-section .btn:hover {
+    background-color: #777;
+}
+/* Liste des produits */
+.product-list {
+    padding-right: 20px; /* Ajoute un espace interne à droite */
+    padding-left: 20px;  /* Ajoute un espace interne à gauche */
+    background-color: #f9f9f9; /* Couleur pour tester la visibilité */
+    box-sizing: border-box; /* Inclut padding dans les dimensions totales */
+    max-width: 1200px; /* Largeur maximale pour s'assurer que le contenu ne déborde pas */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+.product-list h2 {
+    color: #d6336c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Galerie des produits */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px;
+    width: 95%;
+    height: 80%;
+}
+
+.product-gallery > * {
+    margin: 10px; /* Espacement autour de chaque élément */
+}
+
+/* Style de base pour les éléments de produit */
+.product-item {
+    width: 225px;
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    padding: 20px;
+    border: 1px solid #ddd; /* Ajoute une bordure autour de chaque produit */
+    border-radius: 10px; /* Arrondit les coins */
+    max-width: 300px; /* Limite la largeur du produit */
+    text-align: center;
+    background-color: #fff; /* Couleur de fond */
+}
+
+/* Image du produit */
+.product-item img {
+    max-width: 500px;
+    height: 100px;
+    border-radius: 8px; /* Arrondir les coins de l'image */
+}
+
+/* Conteneur des boutons */
+.button-container {
+    display: flex; /* Aligne les boutons sur la même ligne */
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 10px; /* Ajoute de l'espace entre les boutons */
+    margin-top: 15px; /* Espace au-dessus des boutons */
+}
+
+/* Style commun pour les boutons */
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+}
+
+/* Bouton Commander */
+.order-btn {
+    background-color: #555; 
+}
+
+.order-btn:hover {
+    background-color: #777; 
+}
+
+/* Bouton Plus de détail */
+.details-btn {
+    background-color: #555; 
+}
+
+.details-btn:hover {
+    background-color: #777; 
+}
+
+/* Style pour centrer le bouton "Retour" */
+.center-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.center-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s;
+}
+
+.center-button a:hover {
+    background-color: #777; /* Couleur différente au survol */
+}
+
+
+
+/* Sections du footer */
+.site-footer {
+    background-color: #0f0101; /* Couleur de fond sombre */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px; /* Bords arrondis en bas */
+}
+
+/* Conteneur principal pour les sections du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/*  */
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+    flex: 1 1 250px; /* Chaque section occupe une largeur égale et s'adapte */
+    text-align: center;
+}
+
+/* Footer logo */
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-img {
+    width: 60px; /* Taille du logo */
+    height: 60px; /* Proportions conservées */
+    margin-bottom: 10px;
+}
+
+/* Footer liens utiles */
+.footer-links h4, .footer-social h4, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f1c40f; /* Couleur au survol */
+}
+
+/* Footer réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Effet zoom */
+}
+
+/* Footer contact */
+.footer-contact {
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Bas du footer */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+}
